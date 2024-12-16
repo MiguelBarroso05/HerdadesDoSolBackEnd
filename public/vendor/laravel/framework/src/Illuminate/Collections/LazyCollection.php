@@ -15,8 +15,8 @@ use stdClass;
 use Traversable;
 
 /**
- * @template TKey of array-key
- * @template TValue
+ * @pages TKey of array-key
+ * @pages TValue
  *
  * @implements \Illuminate\Support\Enumerable<TKey, TValue>
  */
@@ -58,8 +58,8 @@ class LazyCollection implements CanBeEscapedWhenCastToString, Enumerable
     /**
      * Create a new collection instance if the value isn't one already.
      *
-     * @template TMakeKey of array-key
-     * @template TMakeValue
+     * @pages TMakeKey of array-key
+     * @pages TMakeValue
      *
      * @param  \Illuminate\Contracts\Support\Arrayable<TMakeKey, TMakeValue>|iterable<TMakeKey, TMakeValue>|(Closure(): \Generator<TMakeKey, TMakeValue, mixed, void>)|self<TMakeKey, TMakeValue>|array<TMakeKey, TMakeValue>|null  $items
      * @return static<TMakeKey, TMakeValue>
@@ -252,8 +252,8 @@ class LazyCollection implements CanBeEscapedWhenCastToString, Enumerable
     /**
      * Cross join the given iterables, returning all possible permutations.
      *
-     * @template TCrossJoinKey
-     * @template TCrossJoinValue
+     * @pages TCrossJoinKey
+     * @pages TCrossJoinValue
      *
      * @param  \Illuminate\Contracts\Support\Arrayable<TCrossJoinKey, TCrossJoinValue>|iterable<TCrossJoinKey, TCrossJoinValue>  ...$arrays
      * @return static<int, array<int, TValue|TCrossJoinValue>>
@@ -421,7 +421,7 @@ class LazyCollection implements CanBeEscapedWhenCastToString, Enumerable
     /**
      * Get the first item from the enumerable passing the given truth test.
      *
-     * @template TFirstDefault
+     * @pages TFirstDefault
      *
      * @param  (callable(TValue): bool)|null  $callback
      * @param  TFirstDefault|(\Closure(): TFirstDefault)  $default
@@ -488,7 +488,7 @@ class LazyCollection implements CanBeEscapedWhenCastToString, Enumerable
     /**
      * Get an item by key.
      *
-     * @template TGetDefault
+     * @pages TGetDefault
      *
      * @param  TKey|null  $key
      * @param  TGetDefault|(\Closure(): TGetDefault)  $default
@@ -666,7 +666,7 @@ class LazyCollection implements CanBeEscapedWhenCastToString, Enumerable
     /**
      * Get the last item from the collection.
      *
-     * @template TLastDefault
+     * @pages TLastDefault
      *
      * @param  (callable(TValue, TKey): bool)|null  $callback
      * @param  TLastDefault|(\Closure(): TLastDefault)  $default
@@ -718,7 +718,7 @@ class LazyCollection implements CanBeEscapedWhenCastToString, Enumerable
     /**
      * Run a map over each of the items.
      *
-     * @template TMapValue
+     * @pages TMapValue
      *
      * @param  callable(TValue, TKey): TMapValue  $callback
      * @return static<TKey, TMapValue>
@@ -737,8 +737,8 @@ class LazyCollection implements CanBeEscapedWhenCastToString, Enumerable
      *
      * The callback should return an associative array with a single key/value pair.
      *
-     * @template TMapToDictionaryKey of array-key
-     * @template TMapToDictionaryValue
+     * @pages TMapToDictionaryKey of array-key
+     * @pages TMapToDictionaryValue
      *
      * @param  callable(TValue, TKey): array<TMapToDictionaryKey, TMapToDictionaryValue>  $callback
      * @return static<TMapToDictionaryKey, array<int, TMapToDictionaryValue>>
@@ -753,8 +753,8 @@ class LazyCollection implements CanBeEscapedWhenCastToString, Enumerable
      *
      * The callback should return an associative array with a single key/value pair.
      *
-     * @template TMapWithKeysKey of array-key
-     * @template TMapWithKeysValue
+     * @pages TMapWithKeysKey of array-key
+     * @pages TMapWithKeysValue
      *
      * @param  callable(TValue, TKey): array<TMapWithKeysKey, TMapWithKeysValue>  $callback
      * @return static<TMapWithKeysKey, TMapWithKeysValue>
@@ -782,7 +782,7 @@ class LazyCollection implements CanBeEscapedWhenCastToString, Enumerable
     /**
      * Recursively merge the collection with the given items.
      *
-     * @template TMergeRecursiveValue
+     * @pages TMergeRecursiveValue
      *
      * @param  \Illuminate\Contracts\Support\Arrayable<TKey, TMergeRecursiveValue>|iterable<TKey, TMergeRecursiveValue>  $items
      * @return static<TKey, TValue|TMergeRecursiveValue>
@@ -795,7 +795,7 @@ class LazyCollection implements CanBeEscapedWhenCastToString, Enumerable
     /**
      * Create a collection by using this collection for keys and another for its values.
      *
-     * @template TCombineValue
+     * @pages TCombineValue
      *
      * @param  \IteratorAggregate<array-key, TCombineValue>|array<array-key, TCombineValue>|(callable(): \Generator<array-key, TCombineValue>)  $values
      * @return static<TKey, TCombineValue>
@@ -1515,7 +1515,7 @@ class LazyCollection implements CanBeEscapedWhenCastToString, Enumerable
      * e.g. new LazyCollection([1, 2, 3])->zip([4, 5, 6]);
      *      => [[1, 4], [2, 5], [3, 6]]
      *
-     * @template TZipValue
+     * @pages TZipValue
      *
      * @param  \Illuminate\Contracts\Support\Arrayable<array-key, TZipValue>|iterable<array-key, TZipValue>  ...$items
      * @return static<int, static<int, TValue|TZipValue>>
@@ -1540,7 +1540,7 @@ class LazyCollection implements CanBeEscapedWhenCastToString, Enumerable
     /**
      * Pad collection to the specified length with a value.
      *
-     * @template TPadValue
+     * @pages TPadValue
      *
      * @param  int  $size
      * @param  TPadValue  $value
@@ -1594,8 +1594,8 @@ class LazyCollection implements CanBeEscapedWhenCastToString, Enumerable
     /**
      * Make an iterator from the given source.
      *
-     * @template TIteratorKey of array-key
-     * @template TIteratorValue
+     * @pages TIteratorKey of array-key
+     * @pages TIteratorValue
      *
      * @param  \IteratorAggregate<TIteratorKey, TIteratorValue>|array<TIteratorKey, TIteratorValue>|(callable(): \Generator<TIteratorKey, TIteratorValue>)  $source
      * @return \Traversable<TIteratorKey, TIteratorValue>

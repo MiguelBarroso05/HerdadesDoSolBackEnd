@@ -19,7 +19,7 @@ use Doctrine\DBAL\Types\ConversionException;
 use Exception;
 
 /**
- * @template T of CarbonInterface
+ * @pages T of CarbonInterface
  */
 trait CarbonTypeConverter
 {

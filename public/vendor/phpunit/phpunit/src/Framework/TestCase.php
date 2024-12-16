@@ -911,7 +911,7 @@ abstract class TestCase extends Assert implements Reorderable, SelfDescribing, T
     /**
      * Returns a builder object to create mock objects using a fluent interface.
      *
-     * @psalm-template RealInstanceType of object
+     * @psalm-pages RealInstanceType of object
      * @psalm-param class-string<RealInstanceType> $className
      * @psalm-return MockBuilder<RealInstanceType>
      */
@@ -1698,7 +1698,7 @@ abstract class TestCase extends Assert implements Reorderable, SelfDescribing, T
     /**
      * Makes configurable stub for the specified class.
      *
-     * @psalm-template RealInstanceType of object
+     * @psalm-pages RealInstanceType of object
      * @psalm-param    class-string<RealInstanceType> $originalClassName
      * @psalm-return   Stub&RealInstanceType
      */
@@ -1710,7 +1710,7 @@ abstract class TestCase extends Assert implements Reorderable, SelfDescribing, T
     /**
      * Returns a mock object for the specified class.
      *
-     * @psalm-template RealInstanceType of object
+     * @psalm-pages RealInstanceType of object
      * @psalm-param class-string<RealInstanceType> $originalClassName
      * @psalm-return MockObject&RealInstanceType
      */
@@ -1722,7 +1722,7 @@ abstract class TestCase extends Assert implements Reorderable, SelfDescribing, T
     /**
      * Returns a configured mock object for the specified class.
      *
-     * @psalm-template RealInstanceType of object
+     * @psalm-pages RealInstanceType of object
      * @psalm-param class-string<RealInstanceType> $originalClassName
      * @psalm-return MockObject&RealInstanceType
      */
@@ -1742,7 +1742,7 @@ abstract class TestCase extends Assert implements Reorderable, SelfDescribing, T
      *
      * @param string[] $methods
      *
-     * @psalm-template RealInstanceType of object
+     * @psalm-pages RealInstanceType of object
      * @psalm-param class-string<RealInstanceType> $originalClassName
      * @psalm-return MockObject&RealInstanceType
      */
@@ -1790,7 +1790,7 @@ abstract class TestCase extends Assert implements Reorderable, SelfDescribing, T
     /**
      * Returns a test proxy for the specified class.
      *
-     * @psalm-template RealInstanceType of object
+     * @psalm-pages RealInstanceType of object
      * @psalm-param class-string<RealInstanceType> $originalClassName
      * @psalm-return MockObject&RealInstanceType
      */
@@ -1807,7 +1807,7 @@ abstract class TestCase extends Assert implements Reorderable, SelfDescribing, T
      *
      * @param null|array $methods $methods
      *
-     * @psalm-template RealInstanceType of object
+     * @psalm-pages RealInstanceType of object
      * @psalm-param class-string<RealInstanceType>|string $originalClassName
      * @psalm-return class-string<MockObject&RealInstanceType>
      */
@@ -1834,7 +1834,7 @@ abstract class TestCase extends Assert implements Reorderable, SelfDescribing, T
      * methods of the class mocked. Concrete methods are not mocked by default.
      * To mock concrete methods, use the 7th parameter ($mockedMethods).
      *
-     * @psalm-template RealInstanceType of object
+     * @psalm-pages RealInstanceType of object
      * @psalm-param class-string<RealInstanceType> $originalClassName
      * @psalm-return MockObject&RealInstanceType
      */
@@ -1861,7 +1861,7 @@ abstract class TestCase extends Assert implements Reorderable, SelfDescribing, T
     /**
      * Returns a mock object based on the given WSDL file.
      *
-     * @psalm-template RealInstanceType of object
+     * @psalm-pages RealInstanceType of object
      * @psalm-param class-string<RealInstanceType>|string $originalClassName
      * @psalm-return MockObject&RealInstanceType
      */
@@ -2565,7 +2565,7 @@ abstract class TestCase extends Assert implements Reorderable, SelfDescribing, T
     }
 
     /**
-     * @psalm-template RealInstanceType of object
+     * @psalm-pages RealInstanceType of object
      * @psalm-param class-string<RealInstanceType> $originalClassName
      * @psalm-return MockObject&RealInstanceType
      */

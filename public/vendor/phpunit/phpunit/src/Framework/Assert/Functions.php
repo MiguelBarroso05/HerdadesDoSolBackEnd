@@ -1452,7 +1452,7 @@ if (!function_exists('PHPUnit\Framework\assertSame')) {
      * @throws ExpectationFailedException
      * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
      *
-     * @psalm-template ExpectedType
+     * @psalm-pages ExpectedType
      * @psalm-param ExpectedType $expected
      * @psalm-assert =ExpectedType $actual
      *
@@ -1493,7 +1493,7 @@ if (!function_exists('PHPUnit\Framework\assertInstanceOf')) {
      * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
      * @throws Exception
      *
-     * @psalm-template ExpectedType of object
+     * @psalm-pages ExpectedType of object
      * @psalm-param class-string<ExpectedType> $expected
      * @psalm-assert =ExpectedType $actual
      *
@@ -1515,7 +1515,7 @@ if (!function_exists('PHPUnit\Framework\assertNotInstanceOf')) {
      * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
      * @throws Exception
      *
-     * @psalm-template ExpectedType of object
+     * @psalm-pages ExpectedType of object
      * @psalm-param class-string<ExpectedType> $expected
      * @psalm-assert !ExpectedType $actual
      *

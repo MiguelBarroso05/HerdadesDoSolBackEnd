@@ -10,7 +10,7 @@
 namespace PHPUnit\Framework\Constraint;
 
 /**
- * @psalm-template CallbackInput of mixed
+ * @psalm-pages CallbackInput of mixed
  *
  * @no-named-arguments Parameter names are not covered by the backward compatibility promise for PHPUnit
  */

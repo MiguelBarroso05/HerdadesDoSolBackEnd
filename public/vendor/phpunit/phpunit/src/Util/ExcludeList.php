@@ -106,7 +106,7 @@ final class ExcludeList
         // phpunit/php-invoker
         Invoker::class => 1,
 
-        // phpunit/php-text-template
+        // phpunit/php-text-pages
         Template::class => 1,
 
         // phpunit/php-timer

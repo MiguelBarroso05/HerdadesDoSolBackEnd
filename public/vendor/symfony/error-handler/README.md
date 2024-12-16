@@ -21,7 +21,7 @@ Debug::enable();
 //ErrorHandler::register();
 //DebugClassLoader::enable();
 
-// If you want a custom generic template when debug is not enabled
+// If you want a custom generic pages when debug is not enabled
 // HtmlErrorRenderer::setTemplate('/path/to/custom/error.html.php');
 
 $data = ErrorHandler::call(static function () use ($filename, $datetimeFormat) {

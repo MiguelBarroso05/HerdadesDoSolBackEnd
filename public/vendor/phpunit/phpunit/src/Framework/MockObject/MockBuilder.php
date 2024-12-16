@@ -15,7 +15,7 @@ use PHPUnit\Framework\TestCase;
 use ReflectionClass;
 
 /**
- * @psalm-template MockedType
+ * @psalm-pages MockedType
  *
  * @no-named-arguments Parameter names are not covered by the backward compatibility promise for PHPUnit
  */

@@ -1,0 +1,72 @@
+/* App layout */
+.app-image {
+    background-image: url('../../imgs/pages/app_banner.jpg') !important;
+    background-position-y: 65%;
+    background-position-x: 50%;
+}
+
+
+/* Nav bar */
+.logo {
+    height: 40px;
+    width: 40px;
+}
+
+
+/* Side bar */
+.nav-side {
+    height: auto !important;
+}
+
+
+/* Home page */
+.home-image {
+    background-image: url('../../imgs/pages/home_banner.png') !important;
+    background-size: cover;
+}
+
+
+/* Sign In page */
+.signin-image {
+    background-image: url('../../imgs/pages/sign_in.jpg') !important;
+    background-size: cover;
+}
+
+
+/* Sign Up page */
+.signup-image {
+    background-image: url('../../imgs/pages/sign_up.jpg') !important;
+    background-size: cover;
+}
+
+
+/* Styles */
+.custom-dropdown {
+    appearance: none;
+    background: url('https://cdn-icons-png.flaticon.com/512/60/60995.png') no-repeat right 1rem center;
+    background-size: 1rem;
+    padding-right: 2rem;
+}
+
+
+select::-ms-expand {
+    display: none;
+}
+
+
+.auto-resize {
+    overflow: hidden;
+    resize: none;
+}
+
+
+/* Mobile */
+@media only screen and (max-width: 768px) {
+    .mobile-hidden {
+        display: none !important;
+    }
+}
+
+
+
+

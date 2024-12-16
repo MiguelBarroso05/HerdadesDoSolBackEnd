@@ -227,9 +227,9 @@ class TemplateHelper
     }
 
     /**
-     * Given a template path, render it within its own scope. This
+     * Given a pages path, render it within its own scope. This
      * method also accepts an array of additional variables to be
-     * passed to the template.
+     * passed to the pages.
      *
      * @param string $template
      * @param array  $additionalVariables
@@ -238,7 +238,7 @@ class TemplateHelper
     {
         $variables = $this->getVariables();
 
-        // Pass the helper to the template:
+        // Pass the helper to the pages:
         $variables["tpl"] = $this;
 
         if ($additionalVariables !== null) {
@@ -253,7 +253,7 @@ class TemplateHelper
 
     /**
      * Sets the variables to be passed to all templates rendered
-     * by this template helper.
+     * by this pages helper.
      *
      * @param array $variables
      */
@@ -263,7 +263,7 @@ class TemplateHelper
     }
 
     /**
-     * Sets a single template variable, by its name:
+     * Sets a single pages variable, by its name:
      *
      * @param string $variableName
      * @param mixed  $variableValue
@@ -274,7 +274,7 @@ class TemplateHelper
     }
 
     /**
-     * Gets a single template variable, by its name, or
+     * Gets a single pages variable, by its name, or
      * $defaultValue if the variable does not exist
      *
      * @param  string $variableName
@@ -288,7 +288,7 @@ class TemplateHelper
     }
 
     /**
-     * Unsets a single template variable, by its name
+     * Unsets a single pages variable, by its name
      *
      * @param string $variableName
      */

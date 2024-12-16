@@ -601,7 +601,7 @@ trait Mixin
 
     /**
      * @psalm-pure
-     * @psalm-template ExpectedType of object
+     * @psalm-pages ExpectedType of object
      * @psalm-param class-string<ExpectedType> $class
      * @psalm-assert ExpectedType|null $value
      *
@@ -620,7 +620,7 @@ trait Mixin
 
     /**
      * @psalm-pure
-     * @psalm-template ExpectedType of object
+     * @psalm-pages ExpectedType of object
      * @psalm-param class-string<ExpectedType> $class
      * @psalm-assert iterable<ExpectedType> $value
      *
@@ -639,7 +639,7 @@ trait Mixin
 
     /**
      * @psalm-pure
-     * @psalm-template ExpectedType of object
+     * @psalm-pages ExpectedType of object
      * @psalm-param class-string<ExpectedType> $class
      *
      * @param mixed         $value
@@ -657,7 +657,7 @@ trait Mixin
 
     /**
      * @psalm-pure
-     * @psalm-template ExpectedType of object
+     * @psalm-pages ExpectedType of object
      * @psalm-param class-string<ExpectedType> $class
      *
      * @param mixed         $value
@@ -709,7 +709,7 @@ trait Mixin
 
     /**
      * @psalm-pure
-     * @psalm-template ExpectedType of object
+     * @psalm-pages ExpectedType of object
      * @psalm-param class-string<ExpectedType> $class
      * @psalm-assert ExpectedType|class-string<ExpectedType>|null $value
      *
@@ -728,7 +728,7 @@ trait Mixin
 
     /**
      * @psalm-pure
-     * @psalm-template ExpectedType of object
+     * @psalm-pages ExpectedType of object
      * @psalm-param class-string<ExpectedType> $class
      * @psalm-assert iterable<ExpectedType|class-string<ExpectedType>> $value
      *
@@ -747,7 +747,7 @@ trait Mixin
 
     /**
      * @psalm-pure
-     * @psalm-template UnexpectedType of object
+     * @psalm-pages UnexpectedType of object
      * @psalm-param class-string<UnexpectedType> $class
      *
      * @param object|string|null $value
@@ -765,7 +765,7 @@ trait Mixin
 
     /**
      * @psalm-pure
-     * @psalm-template UnexpectedType of object
+     * @psalm-pages UnexpectedType of object
      * @psalm-param class-string<UnexpectedType> $class
      *
      * @param iterable<object|string> $value
@@ -2268,7 +2268,7 @@ trait Mixin
 
     /**
      * @psalm-pure
-     * @psalm-template ExpectedType of object
+     * @psalm-pages ExpectedType of object
      * @psalm-param class-string<ExpectedType> $class
      * @psalm-assert class-string<ExpectedType>|ExpectedType|null $value
      *
@@ -2287,7 +2287,7 @@ trait Mixin
 
     /**
      * @psalm-pure
-     * @psalm-template ExpectedType of object
+     * @psalm-pages ExpectedType of object
      * @psalm-param class-string<ExpectedType> $class
      * @psalm-assert iterable<class-string<ExpectedType>|ExpectedType> $value
      *
@@ -2336,7 +2336,7 @@ trait Mixin
 
     /**
      * @psalm-pure
-     * @psalm-template ExpectedType of object
+     * @psalm-pages ExpectedType of object
      * @psalm-param class-string<ExpectedType> $interface
      * @psalm-assert class-string<ExpectedType>|null $value
      *
@@ -2355,7 +2355,7 @@ trait Mixin
 
     /**
      * @psalm-pure
-     * @psalm-template ExpectedType of object
+     * @psalm-pages ExpectedType of object
      * @psalm-param class-string<ExpectedType> $interface
      * @psalm-assert iterable<class-string<ExpectedType>> $value
      *
@@ -2784,7 +2784,7 @@ trait Mixin
 
     /**
      * @psalm-pure
-     * @psalm-template T
+     * @psalm-pages T
      * @psalm-param mixed|array<T>|null $array
      * @psalm-assert array<string, T>|null $array
      *
@@ -2802,7 +2802,7 @@ trait Mixin
 
     /**
      * @psalm-pure
-     * @psalm-template T
+     * @psalm-pages T
      * @psalm-param iterable<mixed|array<T>> $array
      * @psalm-assert iterable<array<string, T>> $array
      *
@@ -2820,7 +2820,7 @@ trait Mixin
 
     /**
      * @psalm-pure
-     * @psalm-template T
+     * @psalm-pages T
      * @psalm-param mixed|array<T>|null $array
      *
      * @param mixed  $array
@@ -2837,7 +2837,7 @@ trait Mixin
 
     /**
      * @psalm-pure
-     * @psalm-template T
+     * @psalm-pages T
      * @psalm-param iterable<mixed|array<T>> $array
      *
      * @param mixed  $array

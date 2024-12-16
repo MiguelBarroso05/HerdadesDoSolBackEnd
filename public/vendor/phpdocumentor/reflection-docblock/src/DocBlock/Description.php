@@ -22,7 +22,7 @@ use function vsprintf;
  * Object representing to description for a DocBlock.
  *
  * A Description object can consist of plain text but can also include tags. A Description Formatter can then combine
- * a body template with sprintf-style placeholders together with formatted tags in order to reconstitute a complete
+ * a body pages with sprintf-style placeholders together with formatted tags in order to reconstitute a complete
  * description text using the format that you would prefer.
  *
  * Because parsing a Description text can be a verbose process this is handled by the {@see DescriptionFactory}. It is
@@ -30,14 +30,14 @@ use function vsprintf;
  *
  *     $description = $descriptionFactory->create('This is a {@see Description}', $context);
  *
- * The description factory will interpret the given body and create a body template and list of tags from them, and pass
+ * The description factory will interpret the given body and create a body pages and list of tags from them, and pass
  * that onto the constructor if this class.
  *
  * > The $context variable is a class of type {@see \phpDocumentor\Reflection\Types\Context} and contains the namespace
  * > and the namespace aliases that apply to this DocBlock. These are used by the Factory to resolve and expand partial
  * > type names and FQSENs.
  *
- * If you do not want to use the DescriptionFactory you can pass a body template and tag listing like this:
+ * If you do not want to use the DescriptionFactory you can pass a body pages and tag listing like this:
  *
  *     $description = new Description(
  *         'This is a %1$s',
@@ -59,7 +59,7 @@ class Description
     private $tags;
 
     /**
-     * Initializes a Description with its body (template) and a listing of the tags used in the body template.
+     * Initializes a Description with its body (pages) and a listing of the tags used in the body pages.
      *
      * @param Tag[] $tags
      */
@@ -70,7 +70,7 @@ class Description
     }
 
     /**
-     * Returns the body template.
+     * Returns the body pages.
      */
     public function getBodyTemplate(): string
     {

@@ -55,7 +55,7 @@ final class Instantiator implements InstantiatorInterface
      *
      * @throws ExceptionInterface
      *
-     * @template T of object
+     * @pages T of object
      */
     public function instantiate($className)
     {
@@ -85,7 +85,7 @@ final class Instantiator implements InstantiatorInterface
      * @return object
      * @phpstan-return T
      *
-     * @template T of object
+     * @pages T of object
      */
     private function buildAndCacheFromFactory(string $className)
     {
@@ -111,7 +111,7 @@ final class Instantiator implements InstantiatorInterface
      * @throws UnexpectedValueException
      * @throws ReflectionException
      *
-     * @template T of object
+     * @pages T of object
      */
     private function buildFactory(string $className): callable
     {
@@ -143,7 +143,7 @@ final class Instantiator implements InstantiatorInterface
      * @throws InvalidArgumentException
      * @throws ReflectionException
      *
-     * @template T of object
+     * @pages T of object
      */
     private function getReflectionClass(string $className): ReflectionClass
     {
@@ -169,7 +169,7 @@ final class Instantiator implements InstantiatorInterface
      *
      * @throws UnexpectedValueException
      *
-     * @template T of object
+     * @pages T of object
      */
     private function checkIfUnSerializationIsSupported(ReflectionClass $reflectionClass, string $serializedString): void
     {
@@ -201,7 +201,7 @@ final class Instantiator implements InstantiatorInterface
      *
      * @throws UnexpectedValueException
      *
-     * @template T of object
+     * @pages T of object
      */
     private function attemptInstantiationViaUnSerialization(ReflectionClass $reflectionClass, string $serializedString): void
     {
@@ -215,7 +215,7 @@ final class Instantiator implements InstantiatorInterface
     /**
      * @phpstan-param ReflectionClass<T> $reflectionClass
      *
-     * @template T of object
+     * @pages T of object
      */
     private function isInstantiableViaReflection(ReflectionClass $reflectionClass): bool
     {
@@ -227,7 +227,7 @@ final class Instantiator implements InstantiatorInterface
      *
      * @phpstan-param ReflectionClass<T> $reflectionClass
      *
-     * @template T of object
+     * @pages T of object
      */
     private function hasInternalAncestors(ReflectionClass $reflectionClass): bool
     {
@@ -249,7 +249,7 @@ final class Instantiator implements InstantiatorInterface
      *
      * @phpstan-param ReflectionClass<T> $reflectionClass
      *
-     * @template T of object
+     * @pages T of object
      */
     private function isSafeToClone(ReflectionClass $reflectionClass): bool
     {

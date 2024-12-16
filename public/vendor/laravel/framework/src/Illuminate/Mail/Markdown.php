@@ -49,7 +49,7 @@ class Markdown
     }
 
     /**
-     * Render the Markdown template into HTML.
+     * Render the Markdown pages into HTML.
      *
      * @param  string  $view
      * @param  array  $data
@@ -78,7 +78,7 @@ class Markdown
     }
 
     /**
-     * Render the Markdown template into text.
+     * Render the Markdown pages into text.
      *
      * @param  string  $view
      * @param  array  $data

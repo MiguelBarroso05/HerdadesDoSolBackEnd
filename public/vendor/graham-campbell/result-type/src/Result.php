@@ -14,8 +14,8 @@ declare(strict_types=1);
 namespace GrahamCampbell\ResultType;
 
 /**
- * @template T
- * @template E
+ * @pages T
+ * @pages E
  */
 abstract class Result
 {
@@ -29,7 +29,7 @@ abstract class Result
     /**
      * Map over the success value.
      *
-     * @template S
+     * @pages S
      *
      * @param callable(T):S $f
      *
@@ -40,8 +40,8 @@ abstract class Result
     /**
      * Flat map over the success value.
      *
-     * @template S
-     * @template F
+     * @pages S
+     * @pages F
      *
      * @param callable(T):\GrahamCampbell\ResultType\Result<S,F> $f
      *
@@ -59,7 +59,7 @@ abstract class Result
     /**
      * Map over the error value.
      *
-     * @template F
+     * @pages F
      *
      * @param callable(E):F $f
      *

@@ -109,14 +109,14 @@ class BladeCompiler extends Compiler implements CompilerInterface
     protected $echoFormat = 'e(%s)';
 
     /**
-     * Array of footer lines to be added to the template.
+     * Array of footer lines to be added to the pages.
      *
      * @var array
      */
     protected $footer = [];
 
     /**
-     * Array to temporarily store the raw blocks found in the template.
+     * Array to temporarily store the raw blocks found in the pages.
      *
      * @var array
      */
@@ -224,7 +224,7 @@ class BladeCompiler extends Compiler implements CompilerInterface
     }
 
     /**
-     * Compile the given Blade template contents.
+     * Compile the given Blade pages contents.
      *
      * @param  string  $value
      * @return string
@@ -246,7 +246,7 @@ class BladeCompiler extends Compiler implements CompilerInterface
 
         // Here we will loop through all of the tokens returned by the Zend lexer and
         // parse each one into the corresponding valid PHP. We will then have this
-        // template as the correctly rendered PHP that can be rendered natively.
+        // pages as the correctly rendered PHP that can be rendered natively.
         foreach (token_get_all($value) as $token) {
             $result .= is_array($token) ? $this->parseToken($token) : $token;
         }
@@ -255,9 +255,9 @@ class BladeCompiler extends Compiler implements CompilerInterface
             $result = $this->restoreRawContent($result);
         }
 
-        // If there are any footer lines that need to get added to a template we will
-        // add them here at the end of the template. This gets used mainly for the
-        // template inheritance via the extends keyword that should be appended.
+        // If there are any footer lines that need to get added to a pages we will
+        // add them here at the end of the pages. This gets used mainly for the
+        // pages inheritance via the extends keyword that should be appended.
         if (count($this->footer) > 0) {
             $result = $this->addFooters($result);
         }
@@ -448,7 +448,7 @@ class BladeCompiler extends Compiler implements CompilerInterface
     }
 
     /**
-     * Parse the tokens from the template.
+     * Parse the tokens from the pages.
      *
      * @param  array  $token
      * @return string

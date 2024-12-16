@@ -70,7 +70,7 @@ namespace Ramsey\Collection;
  * }
  * ```
  *
- * @template T
+ * @pages T
  * @extends AbstractCollection<T>
  */
 class Collection extends AbstractCollection

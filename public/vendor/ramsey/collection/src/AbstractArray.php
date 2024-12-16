@@ -24,7 +24,7 @@ use function unserialize;
  * This class provides a basic implementation of `ArrayInterface`, to minimize
  * the effort required to implement this interface.
  *
- * @template T
+ * @pages T
  * @implements ArrayInterface<T>
  */
 abstract class AbstractArray implements ArrayInterface

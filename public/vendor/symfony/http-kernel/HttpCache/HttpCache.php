@@ -348,7 +348,7 @@ class HttpCache implements HttpKernelInterface, TerminableInterface
     /**
      * Validates that a cache entry is fresh.
      *
-     * The original request is used as a template for a conditional
+     * The original request is used as a pages for a conditional
      * GET request with the backend.
      *
      * @param bool $catch Whether to process exceptions

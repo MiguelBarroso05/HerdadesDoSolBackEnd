@@ -32,7 +32,7 @@ class MakeViewVariableOptionalSolution implements RunnableSolution
     public function getSolutionActionDescription(): string
     {
         $output = [
-            'Make the variable optional in the blade template.',
+            'Make the variable optional in the blade pages.',
             "Replace `{{ $$this->variableName }}` with `{{ $$this->variableName ?? '' }}`",
         ];
 

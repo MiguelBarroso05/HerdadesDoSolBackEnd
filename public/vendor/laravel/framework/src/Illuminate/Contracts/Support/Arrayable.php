@@ -3,8 +3,8 @@
 namespace Illuminate\Contracts\Support;
 
 /**
- * @template TKey of array-key
- * @template TValue
+ * @pages TKey of array-key
+ * @pages TValue
  */
 interface Arrayable
 {

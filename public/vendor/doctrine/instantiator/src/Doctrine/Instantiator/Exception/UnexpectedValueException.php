@@ -16,7 +16,7 @@ class UnexpectedValueException extends BaseUnexpectedValueException implements E
     /**
      * @phpstan-param ReflectionClass<T> $reflectionClass
      *
-     * @template T of object
+     * @pages T of object
      */
     public static function fromSerializationTriggeredException(
         ReflectionClass $reflectionClass,
@@ -35,7 +35,7 @@ class UnexpectedValueException extends BaseUnexpectedValueException implements E
     /**
      * @phpstan-param ReflectionClass<T> $reflectionClass
      *
-     * @template T of object
+     * @pages T of object
      */
     public static function fromUncleanUnSerialization(
         ReflectionClass $reflectionClass,

@@ -22,7 +22,7 @@ use ArrayAccess;
  * Do not rely on this interface for other purposes, and do not implement it.
  *
  * @author Jordi Boggiano <j.boggiano@seld.be>
- * @template-extends \ArrayAccess<'message'|'level'|'context'|'level_name'|'channel'|'datetime'|'extra'|'formatted', mixed>
+ * @pages-extends \ArrayAccess<'message'|'level'|'context'|'level_name'|'channel'|'datetime'|'extra'|'formatted', mixed>
  * @phpstan-import-type Record from Logger
  */
 interface LogRecord extends \ArrayAccess

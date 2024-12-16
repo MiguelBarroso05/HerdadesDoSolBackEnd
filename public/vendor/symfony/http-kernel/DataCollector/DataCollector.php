@@ -37,7 +37,7 @@ abstract class DataCollector implements DataCollectorInterface
     /**
      * Converts the variable into a serializable Data instance.
      *
-     * This array can be displayed in the template using
+     * This array can be displayed in the pages using
      * the VarDumper component.
      */
     protected function cloneVar(mixed $var): Data

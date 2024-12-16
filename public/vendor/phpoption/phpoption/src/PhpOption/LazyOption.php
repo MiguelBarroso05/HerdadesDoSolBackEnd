@@ -21,7 +21,7 @@ namespace PhpOption;
 use Traversable;
 
 /**
- * @template T
+ * @pages T
  *
  * @extends Option<T>
  */
@@ -37,7 +37,7 @@ final class LazyOption extends Option
     private $option;
 
     /**
-     * @template S
+     * @pages S
      * @param callable(mixed...):(Option<S>) $callback
      * @param array<int, mixed>              $arguments
      *

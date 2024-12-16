@@ -17,8 +17,8 @@ use PhpOption\None;
 use PhpOption\Some;
 
 /**
- * @template T
- * @template E
+ * @pages T
+ * @pages E
  * @extends \GrahamCampbell\ResultType\Result<T,E>
  */
 final class Success extends Result
@@ -43,7 +43,7 @@ final class Success extends Result
     /**
      * Create a new error value.
      *
-     * @template S
+     * @pages S
      *
      * @param S $value
      *
@@ -67,7 +67,7 @@ final class Success extends Result
     /**
      * Map over the success value.
      *
-     * @template S
+     * @pages S
      *
      * @param callable(T):S $f
      *
@@ -81,8 +81,8 @@ final class Success extends Result
     /**
      * Flat map over the success value.
      *
-     * @template S
-     * @template F
+     * @pages S
+     * @pages F
      *
      * @param callable(T):\GrahamCampbell\ResultType\Result<S,F> $f
      *
@@ -106,7 +106,7 @@ final class Success extends Result
     /**
      * Map over the error value.
      *
-     * @template F
+     * @pages F
      *
      * @param callable(E):F $f
      *

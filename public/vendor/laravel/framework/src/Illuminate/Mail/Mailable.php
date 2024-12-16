@@ -80,7 +80,7 @@ class Mailable implements MailableContract, Renderable
     public $subject;
 
     /**
-     * The Markdown template for the message (if applicable).
+     * The Markdown pages for the message (if applicable).
      *
      * @var string
      */
@@ -778,7 +778,7 @@ class Mailable implements MailableContract, Renderable
     }
 
     /**
-     * Set the Markdown template for the message.
+     * Set the Markdown pages for the message.
      *
      * @param  string  $view
      * @param  array  $data

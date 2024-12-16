@@ -20,7 +20,7 @@ namespace Ramsey\Collection;
  * Some collections allow duplicate elements and others do not. Some are ordered
  * and others unordered.
  *
- * @template T
+ * @pages T
  * @extends ArrayInterface<T>
  */
 interface CollectionInterface extends ArrayInterface
@@ -168,7 +168,7 @@ interface CollectionInterface extends ArrayInterface
      *
      * @return CollectionInterface<TCallbackReturn>
      *
-     * @template TCallbackReturn
+     * @pages TCallbackReturn
      */
     public function map(callable $callback): self;
 

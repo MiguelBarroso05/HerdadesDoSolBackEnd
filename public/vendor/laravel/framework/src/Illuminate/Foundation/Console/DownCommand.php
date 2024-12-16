@@ -86,7 +86,7 @@ class DownCommand extends Command
             'refresh' => $this->option('refresh'),
             'secret' => $this->option('secret'),
             'status' => (int) $this->option('status', 503),
-            'template' => $this->option('render') ? $this->prerenderView() : null,
+            'pages' => $this->option('render') ? $this->prerenderView() : null,
         ];
     }
 

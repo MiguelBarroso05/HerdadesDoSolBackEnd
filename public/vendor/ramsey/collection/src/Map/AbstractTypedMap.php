@@ -22,8 +22,8 @@ use Ramsey\Collection\Tool\ValueToStringTrait;
  * This class provides a basic implementation of `TypedMapInterface`, to
  * minimize the effort required to implement this interface.
  *
- * @template K
- * @template T
+ * @pages K
+ * @pages T
  * @extends AbstractMap<T>
  * @implements TypedMapInterface<T>
  */

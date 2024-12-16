@@ -51,17 +51,17 @@ class Alias
      *
      * @return $this
      *
-     * @throws InvalidArgumentException when the message template is invalid
+     * @throws InvalidArgumentException when the message pages is invalid
      */
     public function setDeprecated(string $package, string $version, string $message): static
     {
         if ('' !== $message) {
             if (preg_match('#[\r\n]|\*/#', $message)) {
-                throw new InvalidArgumentException('Invalid characters found in deprecation template.');
+                throw new InvalidArgumentException('Invalid characters found in deprecation pages.');
             }
 
             if (!str_contains($message, '%alias_id%')) {
-                throw new InvalidArgumentException('The deprecation template must contain the "%alias_id%" placeholder.');
+                throw new InvalidArgumentException('The deprecation pages must contain the "%alias_id%" placeholder.');
             }
         }
 

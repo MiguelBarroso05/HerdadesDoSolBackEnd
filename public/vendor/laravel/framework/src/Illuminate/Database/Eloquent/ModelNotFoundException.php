@@ -6,7 +6,7 @@ use Illuminate\Database\RecordsNotFoundException;
 use Illuminate\Support\Arr;
 
 /**
- * @template TModel of \Illuminate\Database\Eloquent\Model
+ * @pages TModel of \Illuminate\Database\Eloquent\Model
  */
 class ModelNotFoundException extends RecordsNotFoundException
 {

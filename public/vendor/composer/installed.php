@@ -622,7 +622,7 @@
             'reference' => '5a10147d0aaf65b58940a0b72f71c9ac0423cc67',
             'dev_requirement' => true,
         ),
-        'phpunit/php-text-template' => array(
+        'phpunit/php-text-pages' => array(
             'pretty_version' => '2.0.4',
             'version' => '2.0.4.0',
             'type' => 'library',

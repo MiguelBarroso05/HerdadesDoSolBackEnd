@@ -11,8 +11,8 @@ use stdClass;
 use Traversable;
 
 /**
- * @template TKey of array-key
- * @template TValue
+ * @pages TKey of array-key
+ * @pages TValue
  *
  * @implements \ArrayAccess<TKey, TValue>
  * @implements \Illuminate\Support\Enumerable<TKey, TValue>
@@ -203,8 +203,8 @@ class Collection implements ArrayAccess, CanBeEscapedWhenCastToString, Enumerabl
     /**
      * Cross join with the given lists, returning all possible permutations.
      *
-     * @template TCrossJoinKey
-     * @template TCrossJoinValue
+     * @pages TCrossJoinKey
+     * @pages TCrossJoinValue
      *
      * @param  \Illuminate\Contracts\Support\Arrayable<TCrossJoinKey, TCrossJoinValue>|iterable<TCrossJoinKey, TCrossJoinValue>  ...$lists
      * @return static<int, array<int, TValue|TCrossJoinValue>>
@@ -378,7 +378,7 @@ class Collection implements ArrayAccess, CanBeEscapedWhenCastToString, Enumerabl
     /**
      * Get the first item from the collection passing the given truth test.
      *
-     * @template TFirstDefault
+     * @pages TFirstDefault
      *
      * @param  (callable(TValue, TKey): bool)|null  $callback
      * @param  TFirstDefault|(\Closure(): TFirstDefault)  $default
@@ -428,7 +428,7 @@ class Collection implements ArrayAccess, CanBeEscapedWhenCastToString, Enumerabl
     /**
      * Get an item from the collection by key.
      *
-     * @template TGetDefault
+     * @pages TGetDefault
      *
      * @param  TKey  $key
      * @param  TGetDefault|(\Closure(): TGetDefault)  $default
@@ -683,7 +683,7 @@ class Collection implements ArrayAccess, CanBeEscapedWhenCastToString, Enumerabl
     /**
      * Get the last item from the collection.
      *
-     * @template TLastDefault
+     * @pages TLastDefault
      *
      * @param  (callable(TValue, TKey): bool)|null  $callback
      * @param  TLastDefault|(\Closure(): TLastDefault)  $default
@@ -709,7 +709,7 @@ class Collection implements ArrayAccess, CanBeEscapedWhenCastToString, Enumerabl
     /**
      * Run a map over each of the items.
      *
-     * @template TMapValue
+     * @pages TMapValue
      *
      * @param  callable(TValue, TKey): TMapValue  $callback
      * @return static<TKey, TMapValue>
@@ -728,8 +728,8 @@ class Collection implements ArrayAccess, CanBeEscapedWhenCastToString, Enumerabl
      *
      * The callback should return an associative array with a single key/value pair.
      *
-     * @template TMapToDictionaryKey of array-key
-     * @template TMapToDictionaryValue
+     * @pages TMapToDictionaryKey of array-key
+     * @pages TMapToDictionaryValue
      *
      * @param  callable(TValue, TKey): array<TMapToDictionaryKey, TMapToDictionaryValue>  $callback
      * @return static<TMapToDictionaryKey, array<int, TMapToDictionaryValue>>
@@ -760,8 +760,8 @@ class Collection implements ArrayAccess, CanBeEscapedWhenCastToString, Enumerabl
      *
      * The callback should return an associative array with a single key/value pair.
      *
-     * @template TMapWithKeysKey of array-key
-     * @template TMapWithKeysValue
+     * @pages TMapWithKeysKey of array-key
+     * @pages TMapWithKeysValue
      *
      * @param  callable(TValue, TKey): array<TMapWithKeysKey, TMapWithKeysValue>  $callback
      * @return static<TMapWithKeysKey, TMapWithKeysValue>
@@ -795,7 +795,7 @@ class Collection implements ArrayAccess, CanBeEscapedWhenCastToString, Enumerabl
     /**
      * Recursively merge the collection with the given items.
      *
-     * @template TMergeRecursiveValue
+     * @pages TMergeRecursiveValue
      *
      * @param  \Illuminate\Contracts\Support\Arrayable<TKey, TMergeRecursiveValue>|iterable<TKey, TMergeRecursiveValue>  $items
      * @return static<TKey, TValue|TMergeRecursiveValue>
@@ -808,7 +808,7 @@ class Collection implements ArrayAccess, CanBeEscapedWhenCastToString, Enumerabl
     /**
      * Create a collection by using this collection for keys and another for its values.
      *
-     * @template TCombineValue
+     * @pages TCombineValue
      *
      * @param  \Illuminate\Contracts\Support\Arrayable<array-key, TCombineValue>|iterable<array-key, TCombineValue>  $values
      * @return static<TKey, TCombineValue>
@@ -950,7 +950,7 @@ class Collection implements ArrayAccess, CanBeEscapedWhenCastToString, Enumerabl
     /**
      * Get and remove an item from the collection.
      *
-     * @template TPullDefault
+     * @pages TPullDefault
      *
      * @param  TKey  $key
      * @param  TPullDefault|(\Closure(): TPullDefault)  $default
@@ -1571,7 +1571,7 @@ class Collection implements ArrayAccess, CanBeEscapedWhenCastToString, Enumerabl
      * e.g. new Collection([1, 2, 3])->zip([4, 5, 6]);
      *      => [[1, 4], [2, 5], [3, 6]]
      *
-     * @template TZipValue
+     * @pages TZipValue
      *
      * @param  \Illuminate\Contracts\Support\Arrayable<array-key, TZipValue>|iterable<array-key, TZipValue>  ...$items
      * @return static<int, static<int, TValue|TZipValue>>
@@ -1592,7 +1592,7 @@ class Collection implements ArrayAccess, CanBeEscapedWhenCastToString, Enumerabl
     /**
      * Pad collection to the specified length with a value.
      *
-     * @template TPadValue
+     * @pages TPadValue
      *
      * @param  int  $size
      * @param  TPadValue  $value

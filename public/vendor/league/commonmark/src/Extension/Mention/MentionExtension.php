@@ -54,7 +54,7 @@ final class MentionExtension implements ConfigurableExtensionInterface
             } elseif (\is_callable($mention['generator'])) {
                 $environment->addInlineParser(MentionParser::createWithCallback($name, $mention['prefix'], $mention['pattern'], $mention['generator']));
             } else {
-                throw new InvalidConfigurationException(\sprintf('The "generator" provided for the "%s" MentionParser configuration must be a string template, callable, or an object that implements %s.', $name, MentionGeneratorInterface::class));
+                throw new InvalidConfigurationException(\sprintf('The "generator" provided for the "%s" MentionParser configuration must be a string pages, callable, or an object that implements %s.', $name, MentionGeneratorInterface::class));
             }
         }
     }

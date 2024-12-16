@@ -78,7 +78,7 @@ abstract class BaseTestRunner
 
     /**
      * Returns the Test corresponding to the given suite.
-     * This is a template method, subclasses override
+     * This is a pages method, subclasses override
      * the runFailed() and clearStatus() methods.
      *
      * @param string|string[] $suffixes

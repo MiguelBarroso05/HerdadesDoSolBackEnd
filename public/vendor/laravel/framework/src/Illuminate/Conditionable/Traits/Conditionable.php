@@ -10,8 +10,8 @@ trait Conditionable
     /**
      * Apply the callback if the given "value" is (or resolves to) truthy.
      *
-     * @template TWhenParameter
-     * @template TWhenReturnType
+     * @pages TWhenParameter
+     * @pages TWhenReturnType
      *
      * @param  (\Closure($this): TWhenParameter)|TWhenParameter  $value
      * @param  (callable($this, TWhenParameter): TWhenReturnType)|null  $callback
@@ -38,8 +38,8 @@ trait Conditionable
     /**
      * Apply the callback if the given "value" is (or resolves to) falsy.
      *
-     * @template TUnlessParameter
-     * @template TUnlessReturnType
+     * @pages TUnlessParameter
+     * @pages TUnlessReturnType
      *
      * @param  (\Closure($this): TUnlessParameter)|TUnlessParameter  $value
      * @param  (callable($this, TUnlessParameter): TUnlessReturnType)|null  $callback

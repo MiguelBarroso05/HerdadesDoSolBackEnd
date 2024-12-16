@@ -17,8 +17,8 @@ use Traversable;
 use UnexpectedValueException;
 
 /**
- * @template TKey of array-key
- * @template TValue
+ * @pages TKey of array-key
+ * @pages TValue
  *
  * @property-read HigherOrderCollectionProxy $average
  * @property-read HigherOrderCollectionProxy $avg
@@ -99,8 +99,8 @@ trait EnumeratesValues
     /**
      * Create a new collection instance if the value isn't one already.
      *
-     * @template TMakeKey of array-key
-     * @template TMakeValue
+     * @pages TMakeKey of array-key
+     * @pages TMakeValue
      *
      * @param  \Illuminate\Contracts\Support\Arrayable<TMakeKey, TMakeValue>|iterable<TMakeKey, TMakeValue>|null  $items
      * @return static<TMakeKey, TMakeValue>
@@ -113,8 +113,8 @@ trait EnumeratesValues
     /**
      * Wrap the given value in a collection if applicable.
      *
-     * @template TWrapKey of array-key
-     * @template TWrapValue
+     * @pages TWrapKey of array-key
+     * @pages TWrapValue
      *
      * @param  iterable<TWrapKey, TWrapValue>  $value
      * @return static<TWrapKey, TWrapValue>
@@ -129,8 +129,8 @@ trait EnumeratesValues
     /**
      * Get the underlying items from the given collection if applicable.
      *
-     * @template TUnwrapKey of array-key
-     * @template TUnwrapValue
+     * @pages TUnwrapKey of array-key
+     * @pages TUnwrapValue
      *
      * @param  array<TUnwrapKey, TUnwrapValue>|static<TUnwrapKey, TUnwrapValue>  $value
      * @return array<TUnwrapKey, TUnwrapValue>
@@ -153,7 +153,7 @@ trait EnumeratesValues
     /**
      * Create a new collection by invoking the callback a given amount of times.
      *
-     * @template TTimesValue
+     * @pages TTimesValue
      *
      * @param  int  $number
      * @param  (callable(int): TTimesValue)|null  $callback
@@ -334,7 +334,7 @@ trait EnumeratesValues
     /**
      * Run a map over each nested chunk of items.
      *
-     * @template TMapSpreadValue
+     * @pages TMapSpreadValue
      *
      * @param  callable(mixed): TMapSpreadValue  $callback
      * @return static<TKey, TMapSpreadValue>
@@ -353,8 +353,8 @@ trait EnumeratesValues
      *
      * The callback should return an associative array with a single key/value pair.
      *
-     * @template TMapToGroupsKey of array-key
-     * @template TMapToGroupsValue
+     * @pages TMapToGroupsKey of array-key
+     * @pages TMapToGroupsValue
      *
      * @param  callable(TValue, TKey): array<TMapToGroupsKey, TMapToGroupsValue>  $callback
      * @return static<TMapToGroupsKey, static<int, TMapToGroupsValue>>
@@ -380,7 +380,7 @@ trait EnumeratesValues
     /**
      * Map the values into a new class.
      *
-     * @template TMapIntoValue
+     * @pages TMapIntoValue
      *
      * @param  class-string<TMapIntoValue>  $class
      * @return static<TKey, TMapIntoValue>
@@ -492,7 +492,7 @@ trait EnumeratesValues
     /**
      * Apply the callback if the collection is empty.
      *
-     * @template TWhenEmptyReturnType
+     * @pages TWhenEmptyReturnType
      *
      * @param  (callable($this): TWhenEmptyReturnType)  $callback
      * @param  (callable($this): TWhenEmptyReturnType)|null  $default
@@ -506,7 +506,7 @@ trait EnumeratesValues
     /**
      * Apply the callback if the collection is not empty.
      *
-     * @template TWhenNotEmptyReturnType
+     * @pages TWhenNotEmptyReturnType
      *
      * @param  callable($this): TWhenNotEmptyReturnType  $callback
      * @param  (callable($this): TWhenNotEmptyReturnType)|null  $default
@@ -520,7 +520,7 @@ trait EnumeratesValues
     /**
      * Apply the callback unless the collection is empty.
      *
-     * @template TUnlessEmptyReturnType
+     * @pages TUnlessEmptyReturnType
      *
      * @param  callable($this): TUnlessEmptyReturnType  $callback
      * @param  (callable($this): TUnlessEmptyReturnType)|null  $default
@@ -534,7 +534,7 @@ trait EnumeratesValues
     /**
      * Apply the callback unless the collection is not empty.
      *
-     * @template TUnlessNotEmptyReturnType
+     * @pages TUnlessNotEmptyReturnType
      *
      * @param  callable($this): TUnlessNotEmptyReturnType  $callback
      * @param  (callable($this): TUnlessNotEmptyReturnType)|null  $default
@@ -702,7 +702,7 @@ trait EnumeratesValues
     /**
      * Pass the collection to the given callback and return the result.
      *
-     * @template TPipeReturnType
+     * @pages TPipeReturnType
      *
      * @param  callable($this): TPipeReturnType  $callback
      * @return TPipeReturnType
@@ -742,8 +742,8 @@ trait EnumeratesValues
     /**
      * Reduce the collection to a single value.
      *
-     * @template TReduceInitial
-     * @template TReduceReturnType
+     * @pages TReduceInitial
+     * @pages TReduceReturnType
      *
      * @param  callable(TReduceInitial|TReduceReturnType, TValue, TKey): TReduceReturnType  $callback
      * @param  TReduceInitial  $initial

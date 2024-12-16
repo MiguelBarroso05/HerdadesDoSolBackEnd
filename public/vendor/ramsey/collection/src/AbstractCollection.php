@@ -42,7 +42,7 @@ use function usort;
  * This class provides a basic implementation of `CollectionInterface`, to
  * minimize the effort required to implement this interface
  *
- * @template T
+ * @pages T
  * @extends AbstractArray<T>
  * @implements CollectionInterface<T>
  */

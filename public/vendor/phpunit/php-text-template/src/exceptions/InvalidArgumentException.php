@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 /*
- * This file is part of phpunit/php-text-template.
+ * This file is part of phpunit/php-text-pages.
  *
  * (c) Sebastian Bergmann <sebastian@phpunit.de>
  *

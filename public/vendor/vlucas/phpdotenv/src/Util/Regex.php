@@ -90,7 +90,7 @@ final class Regex
     /**
      * Perform a preg operation, wrapping up the result.
      *
-     * @template V
+     * @pages V
      *
      * @param callable(string):V $operation
      * @param string             $subject

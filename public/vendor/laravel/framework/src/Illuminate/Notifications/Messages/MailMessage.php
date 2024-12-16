@@ -27,7 +27,7 @@ class MailMessage extends SimpleMessage implements Renderable
     public $viewData = [];
 
     /**
-     * The Markdown template to render (if applicable).
+     * The Markdown pages to render (if applicable).
      *
      * @var string|null
      */
@@ -128,7 +128,7 @@ class MailMessage extends SimpleMessage implements Renderable
     }
 
     /**
-     * Set the Markdown template for the notification.
+     * Set the Markdown pages for the notification.
      *
      * @param  string  $view
      * @param  array  $data
@@ -145,7 +145,7 @@ class MailMessage extends SimpleMessage implements Renderable
     }
 
     /**
-     * Set the default markdown template.
+     * Set the default markdown pages.
      *
      * @param  string  $template
      * @return $this
@@ -158,7 +158,7 @@ class MailMessage extends SimpleMessage implements Renderable
     }
 
     /**
-     * Set the theme to use with the Markdown template.
+     * Set the theme to use with the Markdown pages.
      *
      * @param  string  $theme
      * @return $this

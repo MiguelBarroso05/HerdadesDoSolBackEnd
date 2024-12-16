@@ -35,7 +35,7 @@ namespace Ramsey\Collection;
  * $set->add($bar); // returns TRUE, $bar !== $foo
  * ```
  *
- * @template T
+ * @pages T
  * @extends AbstractSet<T>
  */
 class Set extends AbstractSet

@@ -431,7 +431,7 @@ function navbarColorOnResize() {
   }
 }
 
-// Deactivate sidenav type buttons on resize and small screens
+// Deactivate sidenav type buttons on resize and small screens-templates
 window.addEventListener("resize", sidenavTypeOnResize);
 window.addEventListener("load", sidenavTypeOnResize);
 

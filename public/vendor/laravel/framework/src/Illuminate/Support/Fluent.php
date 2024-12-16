@@ -8,8 +8,8 @@ use Illuminate\Contracts\Support\Jsonable;
 use JsonSerializable;
 
 /**
- * @template TKey of array-key
- * @template TValue
+ * @pages TKey of array-key
+ * @pages TValue
  *
  * @implements \Illuminate\Contracts\Support\Arrayable<TKey, TValue>
  * @implements \ArrayAccess<TKey, TValue>
@@ -39,7 +39,7 @@ class Fluent implements Arrayable, ArrayAccess, Jsonable, JsonSerializable
     /**
      * Get an attribute from the fluent instance.
      *
-     * @template TGetDefault
+     * @pages TGetDefault
      *
      * @param  TKey  $key
      * @param  TGetDefault|(\Closure(): TGetDefault)  $default

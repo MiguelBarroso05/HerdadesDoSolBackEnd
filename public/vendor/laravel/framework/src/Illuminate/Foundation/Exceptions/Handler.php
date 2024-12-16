@@ -594,7 +594,7 @@ class Handler implements ExceptionHandlerContract
     }
 
     /**
-     * Register the error template hint paths.
+     * Register the error pages hint paths.
      *
      * @return void
      */

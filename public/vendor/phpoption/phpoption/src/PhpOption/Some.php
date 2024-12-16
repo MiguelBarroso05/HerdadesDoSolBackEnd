@@ -21,7 +21,7 @@ namespace PhpOption;
 use ArrayIterator;
 
 /**
- * @template T
+ * @pages T
  *
  * @extends Option<T>
  */
@@ -39,7 +39,7 @@ final class Some extends Option
     }
 
     /**
-     * @template U
+     * @pages U
      *
      * @param U $value
      *

@@ -159,7 +159,7 @@ use Ramsey\Collection\Exception\NoSuchElementException;
  * return value by various methods to indicated that the double-ended queue is
  * empty.
  *
- * @template T
+ * @pages T
  * @extends QueueInterface<T>
  */
 interface DoubleEndedQueueInterface extends QueueInterface

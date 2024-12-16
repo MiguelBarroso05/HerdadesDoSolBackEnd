@@ -129,7 +129,7 @@ class DocblockFormatter implements ReflectorFormatter
     }
 
     /**
-     * Get a docblock vector template.
+     * Get a docblock vector pages.
      *
      * @param string $type Vector type
      * @param int    $max  Pad width

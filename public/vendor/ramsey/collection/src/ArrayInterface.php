@@ -22,7 +22,7 @@ use Serializable;
 /**
  * `ArrayInterface` provides traversable array functionality to data types.
  *
- * @template T
+ * @pages T
  * @extends ArrayAccess<array-key, T>
  * @extends IteratorAggregate<array-key, T>
  */

@@ -10,8 +10,8 @@ use Illuminate\Support\Collection as BaseCollection;
 use LogicException;
 
 /**
- * @template TKey of array-key
- * @template TModel of \Illuminate\Database\Eloquent\Model
+ * @pages TKey of array-key
+ * @pages TModel of \Illuminate\Database\Eloquent\Model
  *
  * @extends \Illuminate\Support\Collection<TKey, TModel>
  */
@@ -20,7 +20,7 @@ class Collection extends BaseCollection implements QueueableCollection
     /**
      * Find a model in the collection by key.
      *
-     * @template TFindDefault
+     * @pages TFindDefault
      *
      * @param  mixed  $key
      * @param  TFindDefault  $default
@@ -349,7 +349,7 @@ class Collection extends BaseCollection implements QueueableCollection
     /**
      * Run a map over each of the items.
      *
-     * @template TMapValue
+     * @pages TMapValue
      *
      * @param  callable(TModel, TKey): TMapValue  $callback
      * @return \Illuminate\Support\Collection<TKey, TMapValue>|static<TKey, TMapValue>
@@ -368,8 +368,8 @@ class Collection extends BaseCollection implements QueueableCollection
      *
      * The callback should return an associative array with a single key / value pair.
      *
-     * @template TMapWithKeysKey of array-key
-     * @template TMapWithKeysValue
+     * @pages TMapWithKeysKey of array-key
+     * @pages TMapWithKeysValue
      *
      * @param  callable(TModel, TKey): array<TMapWithKeysKey, TMapWithKeysValue>  $callback
      * @return \Illuminate\Support\Collection<TMapWithKeysKey, TMapWithKeysValue>|static<TMapWithKeysKey, TMapWithKeysValue>
@@ -584,7 +584,7 @@ class Collection extends BaseCollection implements QueueableCollection
     /**
      * Zip the collection together with one or more arrays.
      *
-     * @template TZipValue
+     * @pages TZipValue
      *
      * @param  \Illuminate\Contracts\Support\Arrayable<array-key, TZipValue>|iterable<array-key, TZipValue>  ...$items
      * @return \Illuminate\Support\Collection<int, \Illuminate\Support\Collection<int, TModel|TZipValue>>
@@ -628,7 +628,7 @@ class Collection extends BaseCollection implements QueueableCollection
     /**
      * Pad collection to the specified length with a value.
      *
-     * @template TPadValue
+     * @pages TPadValue
      *
      * @param  int  $size
      * @param  TPadValue  $value

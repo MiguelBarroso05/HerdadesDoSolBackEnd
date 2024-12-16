@@ -80,7 +80,7 @@ class FileViewFinder implements ViewFinderInterface
     }
 
     /**
-     * Get the path to a template with a named path.
+     * Get the path to a pages with a named path.
      *
      * @param  string  $name
      * @return string
@@ -93,7 +93,7 @@ class FileViewFinder implements ViewFinderInterface
     }
 
     /**
-     * Get the segments of a template with a named path.
+     * Get the segments of a pages with a named path.
      *
      * @param  string  $name
      * @return array

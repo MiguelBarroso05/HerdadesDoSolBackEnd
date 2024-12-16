@@ -164,7 +164,7 @@ class LogManager implements LoggerInterface
     }
 
     /**
-     * Create an emergency log handler to avoid white screens of death.
+     * Create an emergency log handler to avoid white screens-templates of death.
      *
      * @return \Psr\Log\LoggerInterface
      */

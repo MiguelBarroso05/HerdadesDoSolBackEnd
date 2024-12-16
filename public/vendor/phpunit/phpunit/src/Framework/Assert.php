@@ -1320,7 +1320,7 @@ abstract class Assert
      * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
      * @throws ExpectationFailedException
      *
-     * @psalm-template ExpectedType
+     * @psalm-pages ExpectedType
      * @psalm-param ExpectedType $expected
      * @psalm-assert =ExpectedType $actual
      */
@@ -1363,7 +1363,7 @@ abstract class Assert
      * @throws Exception
      * @throws ExpectationFailedException
      *
-     * @psalm-template ExpectedType of object
+     * @psalm-pages ExpectedType of object
      * @psalm-param class-string<ExpectedType> $expected
      * @psalm-assert =ExpectedType $actual
      */
@@ -1387,7 +1387,7 @@ abstract class Assert
      * @throws Exception
      * @throws ExpectationFailedException
      *
-     * @psalm-template ExpectedType of object
+     * @psalm-pages ExpectedType of object
      * @psalm-param class-string<ExpectedType> $expected
      * @psalm-assert !ExpectedType $actual
      */
@@ -2535,7 +2535,7 @@ abstract class Assert
     }
 
     /**
-     * @psalm-template CallbackInput of mixed
+     * @psalm-pages CallbackInput of mixed
      *
      * @psalm-param callable(CallbackInput $callback): bool $callback
      *

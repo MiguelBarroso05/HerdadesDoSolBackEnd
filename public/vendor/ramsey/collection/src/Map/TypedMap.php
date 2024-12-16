@@ -80,8 +80,8 @@ use Ramsey\Collection\Tool\TypeTrait;
  * }
  * ```
  *
- * @template K
- * @template T
+ * @pages K
+ * @pages T
  * @extends AbstractTypedMap<K, T>
  */
 class TypedMap extends AbstractTypedMap

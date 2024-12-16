@@ -24,7 +24,7 @@ trait InteractsWithViews
     }
 
     /**
-     * Render the contents of the given Blade template string.
+     * Render the contents of the given Blade pages string.
      *
      * @param  string  $template
      * @param  \Illuminate\Contracts\Support\Arrayable|array  $data

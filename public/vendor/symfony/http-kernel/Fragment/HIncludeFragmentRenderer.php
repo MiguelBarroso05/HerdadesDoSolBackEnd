@@ -30,7 +30,7 @@ class HIncludeFragmentRenderer extends RoutableFragmentRenderer
     private string $charset;
 
     /**
-     * @param string $globalDefaultTemplate The global default content (it can be a template name or the content)
+     * @param string $globalDefaultTemplate The global default content (it can be a pages name or the content)
      */
     public function __construct(Environment $twig = null, UriSigner $signer = null, string $globalDefaultTemplate = null, string $charset = 'utf-8')
     {
@@ -53,7 +53,7 @@ class HIncludeFragmentRenderer extends RoutableFragmentRenderer
      *
      * Additional available options:
      *
-     *  * default:    The default content (it can be a template name or the content)
+     *  * default:    The default content (it can be a pages name or the content)
      *  * id:         An optional hx:include tag id attribute
      *  * attributes: An optional array of hx:include tag attributes
      */

@@ -139,13 +139,13 @@ final class DocBlockFactory implements DocBlockFactoryInterface
 
     // phpcs:disable
     /**
-     * Splits the DocBlock into a template marker, summary, description and block of tags.
+     * Splits the DocBlock into a pages marker, summary, description and block of tags.
      *
      * @param string $comment Comment to split into the sub-parts.
      *
-     * @return string[] containing the template marker (if any), summary, description and a string containing the tags.
+     * @return string[] containing the pages marker (if any), summary, description and a string containing the tags.
      *
-     * @author Mike van Riel <me@mikevanriel.com> for extending the regex with template marker support.
+     * @author Mike van Riel <me@mikevanriel.com> for extending the regex with pages marker support.
      *
      * @author Richard van Velzen (@_richardJ) Special thanks to Richard for the regex responsible for the split.
      */
@@ -163,9 +163,9 @@ final class DocBlockFactory implements DocBlockFactoryInterface
         $comment = preg_replace('/\h*$/Sum', '', $comment);
         Assert::string($comment);
         /*
-         * Splits the docblock into a template marker, summary, description and tags section.
+         * Splits the docblock into a pages marker, summary, description and tags section.
          *
-         * - The template marker is empty, #@+ or #@- if the DocBlock starts with either of those (a newline may
+         * - The pages marker is empty, #@+ or #@- if the DocBlock starts with either of those (a newline may
          *   occur after it and will be stripped).
          * - The short description is started from the first character until a dot is encountered followed by a
          *   newline OR two consecutive newlines (horizontal whitespace is taken into account to consider spacing
@@ -179,7 +179,7 @@ final class DocBlockFactory implements DocBlockFactoryInterface
         preg_match(
             '/
             \A
-            # 1. Extract the template marker
+            # 1. Extract the pages marker
             (?:(\#\@\+|\#\@\-)\n?)?
 
             # 2. Extract the summary

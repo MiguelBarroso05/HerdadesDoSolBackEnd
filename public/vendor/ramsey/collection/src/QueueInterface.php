@@ -93,7 +93,7 @@ use Ramsey\Collection\Exception\NoSuchElementException;
  * into a queue, as `null` is also used as a special return value by the
  * `poll()` method to indicate that the queue contains no elements.
  *
- * @template T
+ * @pages T
  * @extends ArrayInterface<T>
  */
 interface QueueInterface extends ArrayInterface

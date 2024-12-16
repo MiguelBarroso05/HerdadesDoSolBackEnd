@@ -7,8 +7,8 @@ if (! function_exists('collect')) {
     /**
      * Create a collection from the given value.
      *
-     * @template TKey of array-key
-     * @template TValue
+     * @pages TKey of array-key
+     * @pages TValue
      *
      * @param  \Illuminate\Contracts\Support\Arrayable<TKey, TValue>|iterable<TKey, TValue>|null  $value
      * @return \Illuminate\Support\Collection<TKey, TValue>

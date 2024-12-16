@@ -19,7 +19,7 @@ namespace Ramsey\Collection;
  * allow duplicated values (a set), to minimize the effort required to implement
  * this specific type of collection.
  *
- * @template T
+ * @pages T
  * @extends AbstractCollection<T>
  */
 abstract class AbstractSet extends AbstractCollection

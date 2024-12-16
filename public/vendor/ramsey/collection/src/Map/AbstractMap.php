@@ -25,7 +25,7 @@ use function in_array;
  * This class provides a basic implementation of `MapInterface`, to minimize the
  * effort required to implement this interface.
  *
- * @template T
+ * @pages T
  * @extends AbstractArray<T>
  * @implements MapInterface<T>
  */

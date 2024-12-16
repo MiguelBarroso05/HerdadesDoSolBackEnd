@@ -18,7 +18,7 @@ namespace Ramsey\Collection\Map;
  * A `TypedMapInterface` represents a map of elements where key and value are
  * typed.
  *
- * @template T
+ * @pages T
  * @extends MapInterface<T>
  */
 interface TypedMapInterface extends MapInterface

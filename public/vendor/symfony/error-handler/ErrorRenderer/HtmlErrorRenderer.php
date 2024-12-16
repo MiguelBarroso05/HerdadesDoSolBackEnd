@@ -339,9 +339,9 @@ class HtmlErrorRenderer implements ErrorRendererInterface
     }
 
     /**
-     * Allows overriding the default non-debug template.
+     * Allows overriding the default non-debug pages.
      *
-     * @param string $template path to the custom template file to render
+     * @param string $template path to the custom pages file to render
      */
     public static function setTemplate(string $template): void
     {

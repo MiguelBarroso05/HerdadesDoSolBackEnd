@@ -407,7 +407,7 @@ if (! function_exists('with')) {
     /**
      * Return the given value, optionally passed through the given callback.
      *
-     * @template TValue
+     * @pages TValue
      *
      * @param  TValue  $value
      * @param  (callable(TValue): TValue)|null  $callback

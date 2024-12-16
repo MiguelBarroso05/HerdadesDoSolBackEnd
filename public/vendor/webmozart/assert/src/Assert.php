@@ -398,7 +398,7 @@ class Assert
 
     /**
      * @psalm-pure
-     * @psalm-template ExpectedType of object
+     * @psalm-pages ExpectedType of object
      * @psalm-param class-string<ExpectedType> $class
      * @psalm-assert ExpectedType $value
      *
@@ -421,7 +421,7 @@ class Assert
 
     /**
      * @psalm-pure
-     * @psalm-template ExpectedType of object
+     * @psalm-pages ExpectedType of object
      * @psalm-param class-string<ExpectedType> $class
      * @psalm-assert !ExpectedType $value
      *
@@ -469,7 +469,7 @@ class Assert
 
     /**
      * @psalm-pure
-     * @psalm-template ExpectedType of object
+     * @psalm-pages ExpectedType of object
      * @psalm-param class-string<ExpectedType> $class
      * @psalm-assert ExpectedType|class-string<ExpectedType> $value
      *
@@ -494,7 +494,7 @@ class Assert
 
     /**
      * @psalm-pure
-     * @psalm-template UnexpectedType of object
+     * @psalm-pages UnexpectedType of object
      * @psalm-param class-string<UnexpectedType> $class
      * @psalm-assert !UnexpectedType $value
      * @psalm-assert !class-string<UnexpectedType> $value
@@ -1524,7 +1524,7 @@ class Assert
 
     /**
      * @psalm-pure
-     * @psalm-template ExpectedType of object
+     * @psalm-pages ExpectedType of object
      * @psalm-param class-string<ExpectedType> $class
      * @psalm-assert class-string<ExpectedType>|ExpectedType $value
      *
@@ -1565,7 +1565,7 @@ class Assert
 
     /**
      * @psalm-pure
-     * @psalm-template ExpectedType of object
+     * @psalm-pages ExpectedType of object
      * @psalm-param class-string<ExpectedType> $interface
      * @psalm-assert class-string<ExpectedType> $value
      *
@@ -1846,7 +1846,7 @@ class Assert
 
     /**
      * @psalm-pure
-     * @psalm-template T
+     * @psalm-pages T
      * @psalm-param mixed|array<T> $array
      * @psalm-assert array<string, T> $array
      *
@@ -1869,7 +1869,7 @@ class Assert
 
     /**
      * @psalm-pure
-     * @psalm-template T
+     * @psalm-pages T
      * @psalm-param mixed|array<T> $array
      * @psalm-assert array<string, T> $array
      * @psalm-assert !empty $array

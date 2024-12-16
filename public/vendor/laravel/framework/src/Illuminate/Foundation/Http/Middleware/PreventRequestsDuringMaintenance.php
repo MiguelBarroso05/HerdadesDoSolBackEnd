@@ -67,9 +67,9 @@ class PreventRequestsDuringMaintenance
                 }
             }
 
-            if (isset($data['template'])) {
+            if (isset($data['pages'])) {
                 return response(
-                    $data['template'],
+                    $data['pages'],
                     $data['status'] ?? 503,
                     $this->getHeaders($data)
                 );

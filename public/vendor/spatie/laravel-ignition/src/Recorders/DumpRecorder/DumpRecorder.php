@@ -104,7 +104,7 @@ class DumpRecorder
     /**
      * Find the first meaningful stack frame that is not the `DumpRecorder` itself.
      *
-     * @template T of array{class?: class-string, function?: string, line?: int, file?: string}
+     * @pages T of array{class?: class-string, function?: string, line?: int, file?: string}
      *
      * @param array<T> $stacktrace
      *

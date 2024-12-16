@@ -563,7 +563,7 @@ class Generator
     }
 
     /**
-     * @template T of Extension\Extension
+     * @pages T of Extension\Extension
      *
      * @param class-string<T> $id
      *

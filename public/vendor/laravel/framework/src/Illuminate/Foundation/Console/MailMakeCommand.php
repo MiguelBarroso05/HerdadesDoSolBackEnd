@@ -58,7 +58,7 @@ class MailMakeCommand extends GeneratorCommand
     }
 
     /**
-     * Write the Markdown template for the mailable.
+     * Write the Markdown pages for the mailable.
      *
      * @return void
      */
@@ -159,7 +159,7 @@ class MailMakeCommand extends GeneratorCommand
         return [
             ['force', 'f', InputOption::VALUE_NONE, 'Create the class even if the mailable already exists'],
 
-            ['markdown', 'm', InputOption::VALUE_OPTIONAL, 'Create a new Markdown template for the mailable', false],
+            ['markdown', 'm', InputOption::VALUE_OPTIONAL, 'Create a new Markdown pages for the mailable', false],
         ];
     }
 }

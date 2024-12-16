@@ -32,7 +32,7 @@ class AliasConfigurator
      *
      * @return $this
      *
-     * @throws InvalidArgumentException when the message template is invalid
+     * @throws InvalidArgumentException when the message pages is invalid
      */
     public function deprecate(string $package, string $version, string $message): static
     {

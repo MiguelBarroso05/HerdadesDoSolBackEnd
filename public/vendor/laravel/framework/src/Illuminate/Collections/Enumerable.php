@@ -11,8 +11,8 @@ use JsonSerializable;
 use Traversable;
 
 /**
- * @template TKey of array-key
- * @template TValue
+ * @pages TKey of array-key
+ * @pages TValue
  *
  * @extends \Illuminate\Contracts\Support\Arrayable<TKey, TValue>
  * @extends \IteratorAggregate<TKey, TValue>
@@ -22,8 +22,8 @@ interface Enumerable extends Arrayable, Countable, IteratorAggregate, Jsonable, 
     /**
      * Create a new collection instance if the value isn't one already.
      *
-     * @template TMakeKey of array-key
-     * @template TMakeValue
+     * @pages TMakeKey of array-key
+     * @pages TMakeValue
      *
      * @param  \Illuminate\Contracts\Support\Arrayable<TMakeKey, TMakeValue>|iterable<TMakeKey, TMakeValue>|null  $items
      * @return static<TMakeKey, TMakeValue>
@@ -51,8 +51,8 @@ interface Enumerable extends Arrayable, Countable, IteratorAggregate, Jsonable, 
     /**
      * Wrap the given value in a collection if applicable.
      *
-     * @template TWrapKey of array-key
-     * @template TWrapValue
+     * @pages TWrapKey of array-key
+     * @pages TWrapValue
      *
      * @param  iterable<TWrapKey, TWrapValue>  $value
      * @return static<TWrapKey, TWrapValue>
@@ -62,8 +62,8 @@ interface Enumerable extends Arrayable, Countable, IteratorAggregate, Jsonable, 
     /**
      * Get the underlying items from the given collection if applicable.
      *
-     * @template TUnwrapKey of array-key
-     * @template TUnwrapValue
+     * @pages TUnwrapKey of array-key
+     * @pages TUnwrapValue
      *
      * @param  array<TUnwrapKey, TUnwrapValue>|static<TUnwrapKey, TUnwrapValue>  $value
      * @return array<TUnwrapKey, TUnwrapValue>
@@ -165,8 +165,8 @@ interface Enumerable extends Arrayable, Countable, IteratorAggregate, Jsonable, 
     /**
      * Cross join with the given lists, returning all possible permutations.
      *
-     * @template TCrossJoinKey
-     * @template TCrossJoinValue
+     * @pages TCrossJoinKey
+     * @pages TCrossJoinValue
      *
      * @param  \Illuminate\Contracts\Support\Arrayable<TCrossJoinKey, TCrossJoinValue>|iterable<TCrossJoinKey, TCrossJoinValue>  ...$lists
      * @return static<int, array<int, TValue|TCrossJoinValue>>
@@ -301,7 +301,7 @@ interface Enumerable extends Arrayable, Countable, IteratorAggregate, Jsonable, 
     /**
      * Apply the callback if the given "value" is (or resolves to) truthy.
      *
-     * @template TWhenReturnType as null
+     * @pages TWhenReturnType as null
      *
      * @param  bool  $value
      * @param  (callable($this): TWhenReturnType)|null  $callback
@@ -313,7 +313,7 @@ interface Enumerable extends Arrayable, Countable, IteratorAggregate, Jsonable, 
     /**
      * Apply the callback if the collection is empty.
      *
-     * @template TWhenEmptyReturnType
+     * @pages TWhenEmptyReturnType
      *
      * @param  (callable($this): TWhenEmptyReturnType)  $callback
      * @param  (callable($this): TWhenEmptyReturnType)|null  $default
@@ -324,7 +324,7 @@ interface Enumerable extends Arrayable, Countable, IteratorAggregate, Jsonable, 
     /**
      * Apply the callback if the collection is not empty.
      *
-     * @template TWhenNotEmptyReturnType
+     * @pages TWhenNotEmptyReturnType
      *
      * @param  callable($this): TWhenNotEmptyReturnType  $callback
      * @param  (callable($this): TWhenNotEmptyReturnType)|null  $default
@@ -335,7 +335,7 @@ interface Enumerable extends Arrayable, Countable, IteratorAggregate, Jsonable, 
     /**
      * Apply the callback if the given "value" is (or resolves to) truthy.
      *
-     * @template TUnlessReturnType
+     * @pages TUnlessReturnType
      *
      * @param  bool  $value
      * @param  (callable($this): TUnlessReturnType)  $callback
@@ -347,7 +347,7 @@ interface Enumerable extends Arrayable, Countable, IteratorAggregate, Jsonable, 
     /**
      * Apply the callback unless the collection is empty.
      *
-     * @template TUnlessEmptyReturnType
+     * @pages TUnlessEmptyReturnType
      *
      * @param  callable($this): TUnlessEmptyReturnType  $callback
      * @param  (callable($this): TUnlessEmptyReturnType)|null  $default
@@ -358,7 +358,7 @@ interface Enumerable extends Arrayable, Countable, IteratorAggregate, Jsonable, 
     /**
      * Apply the callback unless the collection is not empty.
      *
-     * @template TUnlessNotEmptyReturnType
+     * @pages TUnlessNotEmptyReturnType
      *
      * @param  callable($this): TUnlessNotEmptyReturnType  $callback
      * @param  (callable($this): TUnlessNotEmptyReturnType)|null  $default
@@ -468,7 +468,7 @@ interface Enumerable extends Arrayable, Countable, IteratorAggregate, Jsonable, 
     /**
      * Get the first item from the enumerable passing the given truth test.
      *
-     * @template TFirstDefault
+     * @pages TFirstDefault
      *
      * @param  (callable(TValue,TKey): bool)|null  $callback
      * @param  TFirstDefault|(\Closure(): TFirstDefault)  $default
@@ -504,7 +504,7 @@ interface Enumerable extends Arrayable, Countable, IteratorAggregate, Jsonable, 
     /**
      * Get an item from the collection by key.
      *
-     * @template TGetDefault
+     * @pages TGetDefault
      *
      * @param  TKey  $key
      * @param  TGetDefault|(\Closure(): TGetDefault)  $default
@@ -610,7 +610,7 @@ interface Enumerable extends Arrayable, Countable, IteratorAggregate, Jsonable, 
     /**
      * Get the last item from the collection.
      *
-     * @template TLastDefault
+     * @pages TLastDefault
      *
      * @param  (callable(TValue, TKey): bool)|null  $callback
      * @param  TLastDefault|(\Closure(): TLastDefault)  $default
@@ -621,7 +621,7 @@ interface Enumerable extends Arrayable, Countable, IteratorAggregate, Jsonable, 
     /**
      * Run a map over each of the items.
      *
-     * @template TMapValue
+     * @pages TMapValue
      *
      * @param  callable(TValue, TKey): TMapValue  $callback
      * @return static<TKey, TMapValue>
@@ -641,8 +641,8 @@ interface Enumerable extends Arrayable, Countable, IteratorAggregate, Jsonable, 
      *
      * The callback should return an associative array with a single key/value pair.
      *
-     * @template TMapToDictionaryKey of array-key
-     * @template TMapToDictionaryValue
+     * @pages TMapToDictionaryKey of array-key
+     * @pages TMapToDictionaryValue
      *
      * @param  callable(TValue, TKey): array<TMapToDictionaryKey, TMapToDictionaryValue>  $callback
      * @return static<TMapToDictionaryKey, array<int, TMapToDictionaryValue>>
@@ -654,8 +654,8 @@ interface Enumerable extends Arrayable, Countable, IteratorAggregate, Jsonable, 
      *
      * The callback should return an associative array with a single key/value pair.
      *
-     * @template TMapToGroupsKey of array-key
-     * @template TMapToGroupsValue
+     * @pages TMapToGroupsKey of array-key
+     * @pages TMapToGroupsValue
      *
      * @param  callable(TValue, TKey): array<TMapToGroupsKey, TMapToGroupsValue>  $callback
      * @return static<TMapToGroupsKey, static<int, TMapToGroupsValue>>
@@ -667,8 +667,8 @@ interface Enumerable extends Arrayable, Countable, IteratorAggregate, Jsonable, 
      *
      * The callback should return an associative array with a single key/value pair.
      *
-     * @template TMapWithKeysKey of array-key
-     * @template TMapWithKeysValue
+     * @pages TMapWithKeysKey of array-key
+     * @pages TMapWithKeysValue
      *
      * @param  callable(TValue, TKey): array<TMapWithKeysKey, TMapWithKeysValue>  $callback
      * @return static<TMapWithKeysKey, TMapWithKeysValue>
@@ -686,7 +686,7 @@ interface Enumerable extends Arrayable, Countable, IteratorAggregate, Jsonable, 
     /**
      * Map the values into a new class.
      *
-     * @template TMapIntoValue
+     * @pages TMapIntoValue
      *
      * @param  class-string<TMapIntoValue>  $class
      * @return static<TKey, TMapIntoValue>
@@ -704,7 +704,7 @@ interface Enumerable extends Arrayable, Countable, IteratorAggregate, Jsonable, 
     /**
      * Recursively merge the collection with the given items.
      *
-     * @template TMergeRecursiveValue
+     * @pages TMergeRecursiveValue
      *
      * @param  \Illuminate\Contracts\Support\Arrayable<TKey, TMergeRecursiveValue>|iterable<TKey, TMergeRecursiveValue>  $items
      * @return static<TKey, TValue|TMergeRecursiveValue>
@@ -714,7 +714,7 @@ interface Enumerable extends Arrayable, Countable, IteratorAggregate, Jsonable, 
     /**
      * Create a collection by using this collection for keys and another for its values.
      *
-     * @template TCombineValue
+     * @pages TCombineValue
      *
      * @param  \Illuminate\Contracts\Support\Arrayable<array-key, TCombineValue>|iterable<array-key, TCombineValue>  $values
      * @return static<TKey, TCombineValue>
@@ -802,8 +802,8 @@ interface Enumerable extends Arrayable, Countable, IteratorAggregate, Jsonable, 
     /**
      * Reduce the collection to a single value.
      *
-     * @template TReduceInitial
-     * @template TReduceReturnType
+     * @pages TReduceInitial
+     * @pages TReduceReturnType
      *
      * @param  callable(TReduceInitial|TReduceReturnType, TValue, TKey): TReduceReturnType  $callback
      * @param  TReduceInitial  $initial
@@ -1064,7 +1064,7 @@ interface Enumerable extends Arrayable, Countable, IteratorAggregate, Jsonable, 
     /**
      * Pass the enumerable to the given callback and return the result.
      *
-     * @template TPipeReturnType
+     * @pages TPipeReturnType
      *
      * @param  callable($this): TPipeReturnType  $callback
      * @return TPipeReturnType
@@ -1138,7 +1138,7 @@ interface Enumerable extends Arrayable, Countable, IteratorAggregate, Jsonable, 
     /**
      * Pad collection to the specified length with a value.
      *
-     * @template TPadValue
+     * @pages TPadValue
      *
      * @param  int  $size
      * @param  TPadValue  $value
@@ -1174,7 +1174,7 @@ interface Enumerable extends Arrayable, Countable, IteratorAggregate, Jsonable, 
      * e.g. new Collection([1, 2, 3])->zip([4, 5, 6]);
      *      => [[1, 4], [2, 5], [3, 6]]
      *
-     * @template TZipValue
+     * @pages TZipValue
      *
      * @param  \Illuminate\Contracts\Support\Arrayable<array-key, TZipValue>|iterable<array-key, TZipValue>  ...$items
      * @return static<int, static<int, TValue|TZipValue>>

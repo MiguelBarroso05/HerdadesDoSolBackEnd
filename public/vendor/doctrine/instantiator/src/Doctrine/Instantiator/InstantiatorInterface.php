@@ -18,7 +18,7 @@ interface InstantiatorInterface
      *
      * @throws ExceptionInterface
      *
-     * @template T of object
+     * @pages T of object
      */
     public function instantiate($className);
 }

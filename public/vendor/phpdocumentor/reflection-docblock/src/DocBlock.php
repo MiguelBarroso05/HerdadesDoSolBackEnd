@@ -34,10 +34,10 @@ final class DocBlock
     /** @var Location|null Information about the location of this DocBlock. */
     private $location;
 
-    /** @var bool Is this DocBlock (the start of) a template? */
+    /** @var bool Is this DocBlock (the start of) a pages? */
     private $isTemplateStart;
 
-    /** @var bool Does this DocBlock signify the end of a DocBlock template? */
+    /** @var bool Does this DocBlock signify the end of a DocBlock pages? */
     private $isTemplateEnd;
 
     /**
@@ -98,7 +98,7 @@ final class DocBlock
     /**
      * Returns whether this DocBlock is the start of a Template section.
      *
-     * A Docblock may serve as template for a series of subsequent DocBlocks. This is indicated by a special marker
+     * A Docblock may serve as pages for a series of subsequent DocBlocks. This is indicated by a special marker
      * (`#@+`) that is appended directly after the opening `/**` of a DocBlock.
      *
      * An example of such an opening is:

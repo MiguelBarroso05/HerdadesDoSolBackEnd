@@ -15,7 +15,7 @@ use Symfony\Component\Finder\Finder;
 use Symfony\Component\Translation\MessageCatalogue;
 
 /**
- * PhpExtractor extracts translation messages from a PHP template.
+ * PhpExtractor extracts translation messages from a PHP pages.
  *
  * @author Michel Salib <michelsalib@hotmail.com>
  */

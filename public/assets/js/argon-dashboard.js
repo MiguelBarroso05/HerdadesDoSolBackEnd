@@ -2668,7 +2668,7 @@ function navbarColorOnResize() {
     sidenav.classList.add('bg-white');
     sidenav.classList.remove('bg-transparent');
   }
-} // Deactivate sidenav type buttons on resize and small screens
+} // Deactivate sidenav type buttons on resize and small screens-templates
 
 
 window.addEventListener("resize", sidenavTypeOnResize);
@@ -3052,7 +3052,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
   /** Error message constants. */
   var CORE_ERROR_TEXT = 'Unsupported core-js use. Try https://npms.io/search?q=ponyfill.',
       FUNC_ERROR_TEXT = 'Expected a function',
-      INVALID_TEMPL_VAR_ERROR_TEXT = 'Invalid `variable` option passed into `_.template`';
+      INVALID_TEMPL_VAR_ERROR_TEXT = 'Invalid `variable` option passed into `_.pages`';
 
   /** Used to stand-in for `undefined` hash values. */
   var HASH_UNDEFINED = '__lodash_hash_undefined__';
@@ -3157,7 +3157,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
       uint16Tag = '[object Uint16Array]',
       uint32Tag = '[object Uint32Array]';
 
-  /** Used to match empty string literals in compiled template source. */
+  /** Used to match empty string literals in compiled pages source. */
   var reEmptyStringLeading = /\b__p \+= '';/g,
       reEmptyStringMiddle = /\b(__p \+=) '' \+/g,
       reEmptyStringTrailing = /(__e\(.*?\)|\b__t\)) \+\n'';/g;
@@ -3168,7 +3168,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
       reHasEscapedHtml = RegExp(reEscapedHtml.source),
       reHasUnescapedHtml = RegExp(reUnescapedHtml.source);
 
-  /** Used to match template delimiters. */
+  /** Used to match pages delimiters. */
   var reEscape = /<%-([\s\S]+?)%>/g,
       reEvaluate = /<%([\s\S]+?)%>/g,
       reInterpolate = /<%=([\s\S]+?)%>/g;
@@ -3200,7 +3200,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
   var reAsciiWord = /[^\x00-\x2f\x3a-\x40\x5b-\x60\x7b-\x7f]+/g;
 
   /**
-   * Used to validate the `validate` option in `_.template` variable.
+   * Used to validate the `validate` option in `_.pages` variable.
    *
    * Forbids characters which could potentially change the meaning of the function argument definition:
    * - "()," (modification of function parameters)
@@ -3216,7 +3216,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 
   /**
    * Used to match
-   * [ES template delimiters](http://ecma-international.org/ecma-262/7.0/#sec-template-literal-lexical-components).
+   * [ES pages delimiters](http://ecma-international.org/ecma-262/7.0/#sec-template-literal-lexical-components).
    */
   var reEsTemplate = /\$\{([^\\}]*(?:\\.[^\\}]*)*)\}/g;
 
@@ -3241,7 +3241,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
   /** Used to match Latin Unicode letters (excluding mathematical operators). */
   var reLatin = /[\xc0-\xd6\xd8-\xf6\xf8-\xff\u0100-\u017f]/g;
 
-  /** Used to ensure capturing order of template delimiters. */
+  /** Used to ensure capturing order of pages delimiters. */
   var reNoMatch = /($^)/;
 
   /** Used to match unescaped characters in compiled string literals. */
@@ -3333,7 +3333,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
     '_', 'clearTimeout', 'isFinite', 'parseInt', 'setTimeout'
   ];
 
-  /** Used to make template sourceURLs easier to identify. */
+  /** Used to make pages sourceURLs easier to identify. */
   var templateCounter = -1;
 
   /** Used to identify `toStringTag` values of typed arrays. */
@@ -4166,7 +4166,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
   var escapeHtmlChar = basePropertyOf(htmlEscapes);
 
   /**
-   * Used by `_.template` to escape characters for inclusion in compiled string literals.
+   * Used by `_.pages` to escape characters for inclusion in compiled string literals.
    *
    * @private
    * @param {string} chr The matched character to escape.
@@ -4688,7 +4688,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
      * `snakeCase`, `some`, `sortedIndex`, `sortedIndexBy`, `sortedLastIndex`,
      * `sortedLastIndexBy`, `startCase`, `startsWith`, `stubArray`, `stubFalse`,
      * `stubObject`, `stubString`, `stubTrue`, `subtract`, `sum`, `sumBy`,
-     * `template`, `times`, `toFinite`, `toInteger`, `toJSON`, `toLength`,
+     * `pages`, `times`, `toFinite`, `toInteger`, `toJSON`, `toLength`,
      * `toLower`, `toNumber`, `toSafeInteger`, `toString`, `toUpper`, `trim`,
      * `trimEnd`, `trimStart`, `truncate`, `unescape`, `uniqueId`, `upperCase`,
      * `upperFirst`, `value`, and `words`
@@ -4780,9 +4780,9 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
     }
 
     /**
-     * By default, the template delimiters used by lodash are like those in
-     * embedded Ruby (ERB) as well as ES2015 template strings. Change the
-     * following template settings to use alternative delimiters.
+     * By default, the pages delimiters used by lodash are like those in
+     * embedded Ruby (ERB) as well as ES2015 pages strings. Change the
+     * following pages settings to use alternative delimiters.
      *
      * @static
      * @memberOf _
@@ -4815,7 +4815,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
       'interpolate': reInterpolate,
 
       /**
-       * Used to reference the data object in the template text.
+       * Used to reference the data object in the pages text.
        *
        * @memberOf _.templateSettings
        * @type {string}
@@ -4823,7 +4823,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
       'variable': '',
 
       /**
-       * Used to import variables into the compiled template.
+       * Used to import variables into the compiled pages.
        *
        * @memberOf _.templateSettings
        * @type {Object}
@@ -12619,7 +12619,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
      * `ary`, `chunk`, `curry`, `curryRight`, `drop`, `dropRight`, `every`,
      * `fill`, `invert`, `parseInt`, `random`, `range`, `rangeRight`, `repeat`,
      * `sampleSize`, `slice`, `some`, `sortBy`, `split`, `take`, `takeRight`,
-     * `template`, `trim`, `trimEnd`, `trimStart`, and `words`
+     * `pages`, `trim`, `trimEnd`, `trimStart`, and `words`
      *
      * @static
      * @memberOf _
@@ -17764,13 +17764,13 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
     }
 
     /**
-     * Creates a compiled template function that can interpolate data properties
+     * Creates a compiled pages function that can interpolate data properties
      * in "interpolate" delimiters, HTML-escape interpolated data properties in
      * "escape" delimiters, and execute JavaScript in "evaluate" delimiters. Data
-     * properties may be accessed as free variables in the template. If a setting
+     * properties may be accessed as free variables in the pages. If a setting
      * object is given, it takes precedence over `_.templateSettings` values.
      *
-     * **Note:** In the development build `_.template` utilizes
+     * **Note:** In the development build `_.pages` utilizes
      * [sourceURLs](http://www.html5rocks.com/en/tutorials/developertools/sourcemaps/#toc-sourceurl)
      * for easier debugging.
      *
@@ -17784,68 +17784,68 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
      * @since 0.1.0
      * @memberOf _
      * @category String
-     * @param {string} [string=''] The template string.
+     * @param {string} [string=''] The pages string.
      * @param {Object} [options={}] The options object.
      * @param {RegExp} [options.escape=_.templateSettings.escape]
      *  The HTML "escape" delimiter.
      * @param {RegExp} [options.evaluate=_.templateSettings.evaluate]
      *  The "evaluate" delimiter.
      * @param {Object} [options.imports=_.templateSettings.imports]
-     *  An object to import into the template as free variables.
+     *  An object to import into the pages as free variables.
      * @param {RegExp} [options.interpolate=_.templateSettings.interpolate]
      *  The "interpolate" delimiter.
      * @param {string} [options.sourceURL='lodash.templateSources[n]']
-     *  The sourceURL of the compiled template.
+     *  The sourceURL of the compiled pages.
      * @param {string} [options.variable='obj']
      *  The data object variable name.
      * @param- {Object} [guard] Enables use as an iteratee for methods like `_.map`.
-     * @returns {Function} Returns the compiled template function.
+     * @returns {Function} Returns the compiled pages function.
      * @example
      *
-     * // Use the "interpolate" delimiter to create a compiled template.
-     * var compiled = _.template('hello <%= user %>!');
+     * // Use the "interpolate" delimiter to create a compiled pages.
+     * var compiled = _.pages('hello <%= user %>!');
      * compiled({ 'user': 'fred' });
      * // => 'hello fred!'
      *
      * // Use the HTML "escape" delimiter to escape data property values.
-     * var compiled = _.template('<b><%- value %></b>');
+     * var compiled = _.pages('<b><%- value %></b>');
      * compiled({ 'value': '<script>' });
      * // => '<b>&lt;script&gt;</b>'
      *
      * // Use the "evaluate" delimiter to execute JavaScript and generate HTML.
-     * var compiled = _.template('<% _.forEach(users, function(user) { %><li><%- user %></li><% }); %>');
+     * var compiled = _.pages('<% _.forEach(users, function(user) { %><li><%- user %></li><% }); %>');
      * compiled({ 'users': ['fred', 'barney'] });
      * // => '<li>fred</li><li>barney</li>'
      *
      * // Use the internal `print` function in "evaluate" delimiters.
-     * var compiled = _.template('<% print("hello " + user); %>!');
+     * var compiled = _.pages('<% print("hello " + user); %>!');
      * compiled({ 'user': 'barney' });
      * // => 'hello barney!'
      *
-     * // Use the ES template literal delimiter as an "interpolate" delimiter.
+     * // Use the ES pages literal delimiter as an "interpolate" delimiter.
      * // Disable support by replacing the "interpolate" delimiter.
-     * var compiled = _.template('hello ${ user }!');
+     * var compiled = _.pages('hello ${ user }!');
      * compiled({ 'user': 'pebbles' });
      * // => 'hello pebbles!'
      *
      * // Use backslashes to treat delimiters as plain text.
-     * var compiled = _.template('<%= "\\<%- value %\\>" %>');
+     * var compiled = _.pages('<%= "\\<%- value %\\>" %>');
      * compiled({ 'value': 'ignored' });
      * // => '<%- value %>'
      *
      * // Use the `imports` option to import `jQuery` as `jq`.
      * var text = '<% jq.each(users, function(user) { %><li><%- user %></li><% }); %>';
-     * var compiled = _.template(text, { 'imports': { 'jq': jQuery } });
+     * var compiled = _.pages(text, { 'imports': { 'jq': jQuery } });
      * compiled({ 'users': ['fred', 'barney'] });
      * // => '<li>fred</li><li>barney</li>'
      *
-     * // Use the `sourceURL` option to specify a custom sourceURL for the template.
-     * var compiled = _.template('hello <%= user %>!', { 'sourceURL': '/basic/greeting.jst' });
+     * // Use the `sourceURL` option to specify a custom sourceURL for the pages.
+     * var compiled = _.pages('hello <%= user %>!', { 'sourceURL': '/basic/greeting.jst' });
      * compiled(data);
      * // => Find the source of "greeting.jst" under the Sources tab or Resources panel of the web inspector.
      *
-     * // Use the `variable` option to ensure a with-statement isn't used in the compiled template.
-     * var compiled = _.template('hi <%= data.user %>!', { 'variable': 'data' });
+     * // Use the `variable` option to ensure a with-statement isn't used in the compiled pages.
+     * var compiled = _.pages('hi <%= data.user %>!', { 'variable': 'data' });
      * compiled.source;
      * // => function(data) {
      * //   var __t, __p = '';
@@ -17853,9 +17853,9 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
      * //   return __p;
      * // }
      *
-     * // Use custom template delimiters.
+     * // Use custom pages delimiters.
      * _.templateSettings.interpolate = /{{([\s\S]+?)}}/g;
-     * var compiled = _.template('hello {{ user }}!');
+     * var compiled = _.pages('hello {{ user }}!');
      * compiled({ 'user': 'mustache' });
      * // => 'hello mustache!'
      *
@@ -17863,7 +17863,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
      * // line numbers in error messages and stack traces.
      * fs.writeFileSync(path.join(process.cwd(), 'jst.js'), '\
      *   var JST = {\
-     *     "main": ' + _.template(mainText).source + '\
+     *     "main": ' + _.pages(mainText).source + '\
      *   };\
      * ');
      */
@@ -21810,7 +21810,7 @@ process.umask = function() { return 0; };
 /************************************************************************/
 /******/ 	// The module cache
 /******/ 	var __webpack_module_cache__ = {};
-/******/ 	
+/******/
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
 /******/ 		// Check if module is in cache
@@ -21824,20 +21824,20 @@ process.umask = function() { return 0; };
 /******/ 			loaded: false,
 /******/ 			exports: {}
 /******/ 		};
-/******/ 	
+/******/
 /******/ 		// Execute the module function
 /******/ 		__webpack_modules__[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-/******/ 	
+/******/
 /******/ 		// Flag the module as loaded
 /******/ 		module.loaded = true;
-/******/ 	
+/******/
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 /******/ 	}
-/******/ 	
+/******/
 /******/ 	// expose the modules object (__webpack_modules__)
 /******/ 	__webpack_require__.m = __webpack_modules__;
-/******/ 	
+/******/
 /************************************************************************/
 /******/ 	/* webpack/runtime/chunk loaded */
 /******/ 	(() => {
@@ -21870,7 +21870,7 @@ process.umask = function() { return 0; };
 /******/ 			return result;
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
@@ -21882,7 +21882,7 @@ process.umask = function() { return 0; };
 /******/ 			}
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/global */
 /******/ 	(() => {
 /******/ 		__webpack_require__.g = (function() {
@@ -21894,12 +21894,12 @@ process.umask = function() { return 0; };
 /******/ 			}
 /******/ 		})();
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports
@@ -21910,7 +21910,7 @@ process.umask = function() { return 0; };
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/node module decorator */
 /******/ 	(() => {
 /******/ 		__webpack_require__.nmd = (module) => {
@@ -21919,11 +21919,11 @@ process.umask = function() { return 0; };
 /******/ 			return module;
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/jsonp chunk loading */
 /******/ 	(() => {
 /******/ 		// no baseURI
-/******/ 		
+/******/
 /******/ 		// object to store loaded and loading chunks
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
@@ -21931,19 +21931,19 @@ process.umask = function() { return 0; };
 /******/ 			"/assets/js/argon-dashboard": 0,
 /******/ 			"assets/css/argon-dashboard": 0
 /******/ 		};
-/******/ 		
+/******/
 /******/ 		// no chunk on demand loading
-/******/ 		
+/******/
 /******/ 		// no prefetching
-/******/ 		
+/******/
 /******/ 		// no preloaded
-/******/ 		
+/******/
 /******/ 		// no HMR
-/******/ 		
+/******/
 /******/ 		// no HMR manifest
-/******/ 		
+/******/
 /******/ 		__webpack_require__.O.j = (chunkId) => (installedChunks[chunkId] === 0);
-/******/ 		
+/******/
 /******/ 		// install a JSONP callback for chunk loading
 /******/ 		var webpackJsonpCallback = (parentChunkLoadingFunction, data) => {
 /******/ 			var [chunkIds, moreModules, runtime] = data;
@@ -21968,20 +21968,20 @@ process.umask = function() { return 0; };
 /******/ 			}
 /******/ 			return __webpack_require__.O(result);
 /******/ 		}
-/******/ 		
+/******/
 /******/ 		var chunkLoadingGlobal = self["webpackChunk"] = self["webpackChunk"] || [];
 /******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
 /******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
 /******/ 	})();
-/******/ 	
+/******/
 /************************************************************************/
-/******/ 	
+/******/
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
 /******/ 	__webpack_require__.O(undefined, ["assets/css/argon-dashboard"], () => (__webpack_require__("./resources/js/app.js")))
 /******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["assets/css/argon-dashboard"], () => (__webpack_require__("./resources/scss/argon-dashboard.scss")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
-/******/ 	
+/******/
 /******/ })()
 ;

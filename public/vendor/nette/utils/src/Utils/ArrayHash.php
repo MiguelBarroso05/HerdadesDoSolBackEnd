@@ -14,7 +14,7 @@ use Nette;
 
 /**
  * Provides objects to work as array.
- * @template T
+ * @pages T
  */
 class ArrayHash extends \stdClass implements \ArrayAccess, \Countable, \IteratorAggregate
 {

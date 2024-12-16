@@ -26,7 +26,7 @@ use function implode;
  * using separator.
  *
  * @psalm-immutable
- * @template-implements IteratorAggregate<int, Type>
+ * @pages-implements IteratorAggregate<int, Type>
  */
 abstract class AggregatedType implements Type, IteratorAggregate
 {

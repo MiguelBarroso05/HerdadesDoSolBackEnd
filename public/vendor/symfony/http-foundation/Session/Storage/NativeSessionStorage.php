@@ -364,7 +364,7 @@ class NativeSessionStorage implements SessionStorageInterface
      *     ini_set('session.save_path', '/tmp');
      *
      * or pass in a \SessionHandler instance which configures session.save_handler in the
-     * constructor, for a template see NativeFileSessionHandler.
+     * constructor, for a pages see NativeFileSessionHandler.
      *
      * @see https://php.net/session-set-save-handler
      * @see https://php.net/sessionhandlerinterface

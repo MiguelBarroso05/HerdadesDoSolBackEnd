@@ -219,7 +219,7 @@ class PrettyPageHandler extends Handler
         $frames = $this->getExceptionFrames();
         $code = $this->getExceptionCode();
 
-        // List of variables that will be passed to the layout template.
+        // List of variables that will be passed to the layout pages.
         $vars = [
             "page_title" => $this->getPageTitle(),
 
@@ -347,7 +347,7 @@ class PrettyPageHandler extends Handler
     }
 
     /**
-     * Adds an entry to the list of tables displayed in the template.
+     * Adds an entry to the list of tables displayed in the pages.
      *
      * The expected data is a simple associative array. Any nested arrays
      * will be flattened with `print_r`.

@@ -23,7 +23,7 @@ use Ramsey\Collection\Tool\ValueToStringTrait;
  * This class provides a basic implementation of `QueueInterface`, to minimize
  * the effort required to implement this interface.
  *
- * @template T
+ * @pages T
  * @extends AbstractArray<T>
  * @implements QueueInterface<T>
  */

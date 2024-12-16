@@ -22,7 +22,7 @@ class Arrays
 
 	/**
 	 * Returns item from array. If it does not exist, it throws an exception, unless a default value is set.
-	 * @template T
+	 * @pages T
 	 * @param  array<T>  $array
 	 * @param  array-key|array-key[]  $key
 	 * @param  ?T  $default
@@ -49,7 +49,7 @@ class Arrays
 
 	/**
 	 * Returns reference to array item. If the index does not exist, new one is created with value null.
-	 * @template T
+	 * @pages T
 	 * @param  array<T>  $array
 	 * @param  array-key|array-key[]  $key
 	 * @return ?T
@@ -73,8 +73,8 @@ class Arrays
 	 * Recursively merges two fields. It is useful, for example, for merging tree structures. It behaves as
 	 * the + operator for array, ie. it adds a key/value pair from the second array to the first one and retains
 	 * the value from the first array in the case of a key collision.
-	 * @template T1
-	 * @template T2
+	 * @pages T1
+	 * @pages T2
 	 * @param  array<T1>  $array1
 	 * @param  array<T2>  $array2
 	 * @return array<T1|T2>
@@ -124,7 +124,7 @@ class Arrays
 
 	/**
 	 * Returns the first item from the array or null if array is empty.
-	 * @template T
+	 * @pages T
 	 * @param  array<T>  $array
 	 * @return ?T
 	 */
@@ -136,7 +136,7 @@ class Arrays
 
 	/**
 	 * Returns the last item from the array or null if array is empty.
-	 * @template T
+	 * @pages T
 	 * @param  array<T>  $array
 	 * @return ?T
 	 */
@@ -309,7 +309,7 @@ class Arrays
 	/**
 	 * Returns and removes the value of an item from an array. If it does not exist, it throws an exception,
 	 * or returns $default, if provided.
-	 * @template T
+	 * @pages T
 	 * @param  array<T>  $array
 	 * @param  array-key  $key
 	 * @param  ?T  $default
@@ -411,7 +411,7 @@ class Arrays
 
 	/**
 	 * Copies the elements of the $array array to the $object object and then returns it.
-	 * @template T of object
+	 * @pages T of object
 	 * @param  T  $object
 	 * @return T
 	 */

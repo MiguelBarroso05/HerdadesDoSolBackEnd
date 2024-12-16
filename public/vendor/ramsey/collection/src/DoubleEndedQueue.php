@@ -21,7 +21,7 @@ use Ramsey\Collection\Exception\NoSuchElementException;
  * This class provides a basic implementation of `DoubleEndedQueueInterface`, to
  * minimize the effort required to implement this interface.
  *
- * @template T
+ * @pages T
  * @extends Queue<T>
  * @implements DoubleEndedQueueInterface<T>
  */

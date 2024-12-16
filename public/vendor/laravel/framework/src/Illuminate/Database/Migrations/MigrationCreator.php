@@ -59,7 +59,7 @@ class MigrationCreator
         $this->ensureMigrationDoesntAlreadyExist($name, $path);
 
         // First we will get the stub file for the migration, which serves as a type
-        // of template for the migration. Once we have those we will populate the
+        // of pages for the migration. Once we have those we will populate the
         // various place-holders, save the file, and run the post create event.
         $stub = $this->getStub($table, $create);
 

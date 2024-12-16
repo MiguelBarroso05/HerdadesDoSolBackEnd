@@ -57,7 +57,7 @@ class NotificationMakeCommand extends GeneratorCommand
     }
 
     /**
-     * Write the Markdown template for the mailable.
+     * Write the Markdown pages for the mailable.
      *
      * @return void
      */
@@ -137,7 +137,7 @@ class NotificationMakeCommand extends GeneratorCommand
         return [
             ['force', 'f', InputOption::VALUE_NONE, 'Create the class even if the notification already exists'],
 
-            ['markdown', 'm', InputOption::VALUE_OPTIONAL, 'Create a new Markdown template for the notification'],
+            ['markdown', 'm', InputOption::VALUE_OPTIONAL, 'Create a new Markdown pages for the notification'],
         ];
     }
 }

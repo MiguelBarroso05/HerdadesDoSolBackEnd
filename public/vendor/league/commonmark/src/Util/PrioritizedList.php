@@ -19,7 +19,7 @@ namespace League\CommonMark\Util;
 /**
  * @internal
  *
- * @phpstan-template T
+ * @phpstan-pages T
  * @phpstan-implements \IteratorAggregate<T>
  */
 final class PrioritizedList implements \IteratorAggregate

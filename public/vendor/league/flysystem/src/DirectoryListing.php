@@ -10,7 +10,7 @@ use IteratorAggregate;
 use Traversable;
 
 /**
- * @template T
+ * @pages T
  */
 class DirectoryListing implements IteratorAggregate
 {
